@@ -1,0 +1,54 @@
+<div class="hidden fixednavWrap">
+  <div class="hidden md:block fixed vdabg w-full  py-2 top-0" style="transition:all 0.5s;top:-75px">
+    <div class="max-w-6xl mx-auto p-0 md:p-1">
+      <nav class="">
+        <div class="flex flex-1 md:justify-start">
+          <a href="/">
+            <img
+              src="http://www.vda.cz/assets/images/logo.png"
+              class=" mx-auto md:mx-0 md:inline-block"
+              style="height:50px;"
+              alt=""
+            />
+          </a>
+          <label id="menutoggle" for="menu"
+            ><i class="pr-6 pt-3 text-white text-xl fas fa-caret-square-down md:hidden"></i
+          ></label>
+        </div>
+
+        <div class="float-right -mt-16 pt-3">
+          <input type="checkbox" class="hidden" id="menu" />
+          <ul
+            class="overflow-hidden bg-pink-700 md:bg-transparent rounded-lg p-1 flex flex-col sm:flex-row  text-white text-sm font-bold justify-end  uppercase shadow-outline md:shadow-none"
+          >
+            <li
+              class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+            >
+              Aktuality
+            </li>
+            <li
+              class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+            >
+              Škola
+            </li>
+            <li
+              class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+            >
+              Student
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <script>
+    const fixednav = document.querySelector('.fixednavWrap > div');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 700) {
+        fixednav.style.top = '0px';
+      } else {
+        fixednav.style.top = '-75px';
+      }
+    });
+  </script>
+</div>

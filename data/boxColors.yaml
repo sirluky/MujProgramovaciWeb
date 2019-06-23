@@ -1,0 +1,6 @@
+bg:
+  - bg-blue-400
+  - bg-yellow-600
+  - bg-pink-600
+  - bg-green-600
+# vsechny mozne barevne kombinace zde: https://tailwindcss.com/docs/background-color/#class-reference

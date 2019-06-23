@@ -1,0 +1,54 @@
+<div class="bg-gray-200" style="z-index: 4">
+  <style>
+    .panel .box {
+      background: aqua;
+      overflow: hidden;
+      margin: 10px;
+      padding: 0;
+    }
+    :root {
+      --tpos: -40px;
+    }
+    .panel .text {
+      position: relative;
+      /*   height:0; */
+      /*   padding:5px; */
+      /*   background:aqua; */
+      padding: 10px;
+      width: 100%;
+      top: var(--tpos);
+      margin-bottom: var(--tpos);
+    }
+
+    .panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+  </style>
+
+  <section class="max-w-6xl mx-auto pt-12">
+    <div class="panel max-w-6xl mx-auto">
+      {{$colorCount := 0}}
+      {{ range.Pages }}
+      <div class="box rounded-lg max-w-md">
+        <a href="{{.RelPermalink}}">
+          <img
+            class="w-full"
+            src="http://www.vda.cz/userfiles/images/aktuality/PZ2.jpg"
+            alt=""
+          /><!--https://place-hold.it/480x320-->
+          <div class="text {{index $.Site.Data.boxColors.bg $colorCount}} text-white">{{.Title}}</div>
+        </a>
+      </div>
+      {{$colorCount = mod (add $colorCount 1) (len $.Site.Data.boxColors.bg)}}
+
+      {{ end }}
+    </div>
+    {{/* bg-blue-400 bg-yellow-600 bg-pink-600 bg-green-600  */}}
+
+    {{/*  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste expedita, culpa esse est quis ut tempora
+    exercitationem non consequuntur. Dolorum molestias reiciendis architecto fugiat quidem commodi maxime explicabo eius
+    amet est aperiam officia ad dolorem, quam omnis debitis modi. Ex ullam voluptatum libero autem, excepturi obcaecati
+    sequi, amet rem blanditiis sed illo quos distinctio ratione! Saepe voluptas eveniet quisquam.  */}}
+  </section>
+</div>

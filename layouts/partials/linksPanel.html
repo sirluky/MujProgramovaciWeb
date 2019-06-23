@@ -1,0 +1,21 @@
+<div>
+  <nav
+    class="links  justify-center text-center vdatext my-12 pb-4 max-w-6xl mx-auto "
+    style="display:grid;grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));"
+  >
+    <!-- <div class="flex-auto cursor-pointer ">
+          <i style="font-size:80px" class="j mx-8 fas fa-calendar-alt hover:text-blue-500"></i>
+          <p class="mt-5 uppercase hover:text-pink-700">rozvrh a <br />suplovaní</p>
+        </div> -->
+
+    {{range sort (where .Pages ".Type" "panel") ".Params.order" "asc"}}
+
+    <div class=" cursor-pointer" style="">
+      <a href="{{.RelPermalink}}">
+        <i style="font-size:80px" class=" mx-8 {{.Params.icon}} hover:text-blue-500"></i>
+        <p class="mt-5 hover:text-pink-700">{{.Title}}</p>
+      </a>
+    </div>
+    {{ end }}
+  </nav>
+</div>

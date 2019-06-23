@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- <img class="flex-initial " src="" alt="" />
+    <img class="flex-initial " src="http://www.vda.cz/userfiles/images/slider/16.04.2019_banner.jpg" alt="" />
+    <img class="flex-initial " src="http://www.vda.cz/userfiles/images/slider/dny_ot_dveri_2018.jpg" alt="" /> -->
+    <style>
+      [for='menu'] {
+        user-select: none;
+      }
+
+      .vdabg {
+        background: #004475;
+      }
+
+      .vdatext {
+        color: #004475;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .logoh {
+          max-height: 46px;
+        }
+
+        #menu ~ ul {
+          position: absolute;
+          z-index: 100;
+          width: 85%;
+          left: 7%;
+          transition: 0.3s;
+          margin-top: 0px;
+        }
+
+        #menu:not(:checked) ~ ul {
+          visibility: hidden;
+          margin-top: -400px;
+        }
+      }
+
+      #menu ~ #menutoggle {
+        color: black;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .logoh {
+          max-height: 70px;
+        }
+
+        .gallery-wrapper {
+          box-shadow: 0 25px 50px -12px rgba(255, 255, 255, 0.25);
+        }
+        .fixednavWrap {
+          display: block;
+        }
+      }
+
+      /* .gallery .photo {
+        height: 0;
+        width: 100%;
+
+        padding-bottom: 14.5%;
+      }
+      .gallery .photo:nth-of-type(1) {
+        background-image: url(http://www.vda.cz/userfiles/images/slider/centrum%20ict%202019.jpg);
+      }
+      .gallery .photo:nth-of-type(2) {
+        background-image: url(http://www.vda.cz/userfiles/images/slider/16.04.2019_banner.jpg);
+      }
+      .gallery .photo:nth-of-type(3) {
+        background-image: url(http://www.vda.cz/userfiles/images/slider/dny_ot_dveri_2018.jpg);
+      }*/
+
+      .links i,
+      p {
+        transition: color 0.5s;
+      }
+
+      .sipka {
+        border: 38px white solid;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+
+        width: 0px;
+        height: 0px;
+        margin: auto;
+        margin-bottom: -70px;
+        z-index: 5;
+        transform: scaleX(1.3);
+      }
+    </style>
+    <title>CSS Experiments</title>
+  </head>
+
+  <body class="">
+    <div class="vdabg pt-8   pt-2">
+      <div class="max-w-6xl mx-auto p-0 md:p-1">
+        <nav class=" pb-16 md:pb-2">
+          <div class="float-right my-2 hidden sm:block">
+            <ul class="text-white  flex ">
+              <li class=" ">
+                <a href="javascript:alert('facebook')">
+                  <i class="text-5xl  pr-5 inline-block fab fa-facebook-square opacity-75"></i
+                ></a>
+              </li>
+              <li>
+                <div class="vyhledavani rounded-full overflow-hidden border-2  border-white">
+                  <input type="text" class="p-2 py-3 w-48 bg-transparent font-thin" id="vyhledavac" />
+
+                  <i
+                    class="fas fa-times mr-4 cursor-pointer text-xl"
+                    onclick="javascript:document.querySelector('#vyhledavac').value = ''"
+                  ></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-1 justify-center md:justify-start">
+            <a href="/">
+              <img
+                src="http://www.vda.cz/assets/images/logo.png"
+                class="logoh mx-auto md:mx-0 md:inline-block"
+                alt=""
+              />
+            </a>
+            <label id="menutoggle" for="menu"
+              ><i class="pr-6 pt-3 text-white text-xl fas fa-caret-square-down md:hidden"></i
+            ></label>
+          </div>
+
+          <div class="max-w-xs md:max-w-full  mt-4 md:mt-0">
+            <input type="checkbox" class="hidden" id="menu" />
+            <ul
+              class="overflow-hidden bg-pink-700 md:bg-transparent rounded-lg p-1 flex flex-col sm:flex-row  text-white text-sm font-bold justify-end  uppercase shadow-outline md:shadow-none"
+            >
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Aktuality
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Škola
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Student
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Uchazeč
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Veřejnost
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Aktivity
+              </li>
+              <li
+                class="my-0 md:py-3 py-2 text-sm flex-none sm:flex-1 md:flex-initial  px-4 mx-1   hover:bg-blue-400 rounded cursor-pointer"
+              >
+                Kontakty
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    {{block "main" .}}
+
+    {{ end }}
+    <div class="bg-gray-200">
+      <div class="max-w-6xl mx-auto">
+        {{block "content" .}}
+
+        {{ end }}
+      </div>
+    </div>
+    {{ partial "fixedNav" . }}
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

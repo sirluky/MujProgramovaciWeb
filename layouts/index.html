@@ -1,7 +1,12 @@
-{{define "main"}}
-{{ partial "gallery" . }}
-{{ partial "linksPanel" .}}
-<div class="sipka"></div>
-
-{{ partial "boxnav" .}}
+{{define "header"}}
+<h1>
+  Vitejte na mém webu, dnes je
+  <script>
+    document.write(new Date().toLocaleDateString());
+  </script>
+</h1>
+<p class="max-w-4xl mx-auto">
+  Zde sdílím mnou naprogramované webové aplikace, v jazycích, kterým se věnuji/věnoval. Momentálně nejčastěji programuji
+  v JavaScriptu a používám framework P5.JS, který některé příkazy z JavaScriptu zjednodušuje (hlavně kreslení).
+</p>
 {{ end }}

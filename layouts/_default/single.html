@@ -1,4 +1,29 @@
+{{define "Head"}}
+{{ range.Params.libs }}
+<script src="{{.}}"></script>
+{{ end }}
+{{ end }}
+
+{{define "header"}}
+<h1>{{.Title}}</h1>
+
+{{ end }}
 {{ define "content" }}
-<h1 class="text-4xl font-medium">{{.Title}}</h1>
-<p>{{.Content}}</p>
+
+<div class="game">
+  <p>{{.Content}}</p>
+</div>
+<script>
+  window.onload = function() {
+    const placeCanvasInterval = setInterval(function() {
+      let main = document.querySelector('main .game');
+      let canvas = document.querySelector('#defaultCanvas0');
+      if (canvas) {
+        document.querySelector('main .game').appendChild(canvas);
+        canvas.style.display = 'block';
+      }
+    }, 100);
+  };
+</script>
+
 {{ end }}

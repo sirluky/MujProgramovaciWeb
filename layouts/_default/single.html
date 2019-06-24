@@ -1,6 +1,15 @@
 {{define "Head"}}
 {{ range.Params.libs }}
+{{if eq . "P5.JS" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.min.js"></script>
+
+{{else if eq . "PHASER3"}}
+<script src="//cdn.jsdelivr.net/npm/phaser@3.18.1/dist/phaser.min.js"></script>
+{{ else }}
 <script src="{{.}}"></script>
+{{ end }}
 {{ end }}
 {{ end }}
 
@@ -11,19 +20,21 @@
 {{ define "content" }}
 
 <div class="game">
-  <p>{{.Content}}</p>
+  {{.Content}}
 </div>
+
 <script>
-  window.onload = function() {
+  window.addEventListener('DOMContentLoaded', event => {
     const placeCanvasInterval = setInterval(function() {
       let main = document.querySelector('main .game');
-      let canvas = document.querySelector('#defaultCanvas0');
-      if (canvas) {
+      let IScanvas = document.querySelector('main .game canvas');
+      if (!IScanvas) {
+        let canvas = document.querySelector('canvas');
         document.querySelector('main .game').appendChild(canvas);
         canvas.style.display = 'block';
       }
-    }, 100);
-  };
+    }, 300);
+  });
 </script>
 
 {{ end }}

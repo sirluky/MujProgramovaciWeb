@@ -1,7 +1,7 @@
 ---
 title: 'Flappy bird'
 date: 2019-06-23T19:29:35+02:00
-draft: true
+draft: false
 libs: [PHASER3]
 thub: 'https://place-hold.it/640x360'
 ---

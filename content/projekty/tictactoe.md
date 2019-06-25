@@ -1,7 +1,7 @@
 ---
 title: 'hra TicTacToe'
 date: 2019-06-25T11:18:02+02:00
-draft: true
+draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
 ---

@@ -1,7 +1,7 @@
 ---
 title: 'Sušenko-clicker'
 date: 2019-06-25T11:47:49+02:00
-draft: true
+draft: false
 libs: [JS]
 thub: 'https://place-hold.it/640x360'
 ---

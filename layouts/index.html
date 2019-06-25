@@ -14,7 +14,7 @@
 {{define "content"}}
 <h2>Nejnovější</h2>
 <section>
-  {{ range first 5 .Data.Pages }}
+  {{ range first 50 .Data.Pages }}
   <article>
     <a href="{{.Permalink}}">{{.Title}}</a>
     <div class="libraries">

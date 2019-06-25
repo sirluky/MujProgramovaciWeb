@@ -1,0 +1,40 @@
+.vetsi {
+  font-size: 11;
+  width: 400px;
+  height: 30px;
+}
+.jestevetsi {
+  text-align: center;
+  //font-size: 30;
+  width: 200px;
+  height: 30px;
+}
+.pocet {
+  text-align: center;
+  height: 30px;
+  width: 50px;
+}
+.bonus {
+  display: inline;
+  color: red;
+  background-color: yellow;
+}
+.susenka {
+  //background-color: yellow;
+}
+.textsusky {
+  display: inline;
+  font-size: 300%;
+  background-color: #daffcc;
+  //margin: 100px;
+}
+.kolemtextsusky {
+  margin: auto;
+  //height:70px;
+  background-color: #e1ffd7;
+  padding: 20px 10px;
+  width: 500px;
+}
+.game input {
+  display: inline !important;
+}

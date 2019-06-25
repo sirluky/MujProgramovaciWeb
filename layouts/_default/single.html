@@ -20,6 +20,8 @@
 {{ define "content" }}
 
 <div class="game">
+  <button id="screenshot" class="absolute right-0 m-4" style="display: none">Vyfotit</button>
+
   {{.Content}}
 </div>
 
@@ -32,8 +34,19 @@
         let canvas = document.querySelector('canvas');
         document.querySelector('main .game').appendChild(canvas);
         canvas.style.display = 'block';
+        screenshot.style.display = 'block';
       }
     }, 300);
+    let screenshot = document.querySelector('#screenshot');
+    function ScreenShot() {
+      const download = document.createElement('a');
+      download.setAttribute('href', document.querySelector('canvas').toDataURL('png'));
+      download.setAttribute('download', 'screenshot.png');
+      download.textContent = 'Stahnout';
+      download.className = 'absolute right-0 m-4';
+      document.querySelector('.game').replaceChild(download, screenshot);
+    }
+    screenshot.onclick = ScreenShot;
   });
 </script>
 

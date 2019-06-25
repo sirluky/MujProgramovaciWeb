@@ -1,4 +1,9 @@
 {{define "Head"}}
+{{if .Params.redirect}}
+<script>
+  window.location.replace('{{.Params.redirect}}');
+</script>
+{{ end }}
 {{ range.Params.libs }}
 {{if eq . "P5.JS" }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
@@ -7,9 +12,11 @@
 
 {{else if eq . "PHASER3"}}
 <script src="//cdn.jsdelivr.net/npm/phaser@3.18.1/dist/phaser.min.js"></script>
-{{ else }}
+{{ else if in . "https://"}}
 <script src="{{.}}"></script>
-{{ end }}
+{{ else if in . "http://"}}
+<script src="{{.}}"></script>
+{{else}}{{ end }}
 {{ end }}
 {{ end }}
 
@@ -30,11 +37,15 @@
     const placeCanvasInterval = setInterval(function() {
       let main = document.querySelector('main .game');
       let IScanvas = document.querySelector('main .game canvas');
-      if (!IScanvas) {
-        let canvas = document.querySelector('canvas');
+      let canvas = document.querySelector('canvas');
+      EverythingToScope()
+
+      if (!IScanvas && canvas) {
         document.querySelector('main .game').appendChild(canvas);
         canvas.style.display = 'block';
+        {{if  in .Params.libs "P5.JS" }}
         screenshot.style.display = 'block';
+        {{end}}
       }
     }, 300);
     let screenshot = document.querySelector('#screenshot');
@@ -47,6 +58,23 @@
       document.querySelector('.game').replaceChild(download, screenshot);
     }
     screenshot.onclick = ScreenShot;
+
+    function EverythingToScope() {
+      let elements = []
+      let bottom = document.querySelector('#info_footer')
+      while (bottom.nextSibling !== null) {
+        bottom = bottom.nextSibling;
+        if (bottom.tagName !== "SCRIPT") {
+          elements.push(bottom)
+        }
+      }
+
+      let game = document.querySelector('.game')
+      for(let i = 0; i < elements.length;i++){
+        game.appendChild(elements[i])
+      }
+
+    }
   });
 </script>
 

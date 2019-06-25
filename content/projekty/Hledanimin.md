@@ -5,6 +5,7 @@ libs: ['P5.JS']
 desc:
 thub: 'https://place-hold.it/640x360'
 draft: false
+tags: [hry]
 ---
 
 Toto je mnou naprogramovaná verze hry Hledani min (minesweeper),<!--more--> v budoucnu plánuji přidat scorecounter, časovac, opravit/vylepšit generátor rozpoložující miny a nekolik dalších vecí vylepšující hratelnost

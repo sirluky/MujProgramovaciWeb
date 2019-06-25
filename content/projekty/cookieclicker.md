@@ -4,6 +4,7 @@ date: 2019-06-25T11:47:49+02:00
 draft: false
 libs: [JS]
 thub: 'https://place-hold.it/640x360'
+tags: [hry]
 ---
 
 <link rel="stylesheet" type="text/css" href="cookiegame.css">

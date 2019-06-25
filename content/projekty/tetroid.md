@@ -4,6 +4,7 @@ date: 2019-06-25T12:02:26+02:00
 draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
+tags: [hry]
 ---
 
 Tetroid v mem podani, original naleznete <a href="https://www.duelovky.cz/games/game.aspx?gid=tetroid&play=true#p=game">zde</a>

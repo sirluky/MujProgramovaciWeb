@@ -1,0 +1,124 @@
+{
+	"textures": [
+		{
+			"image": "flappy0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 63,
+				"h": 83
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "ground.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 32,
+						"h": 31
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 31
+					}
+				},
+				{
+					"filename": "pipe.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 28,
+						"h": 32
+					},
+					"frame": {
+						"x": 0,
+						"y": 31,
+						"w": 28,
+						"h": 32
+					}
+				},
+				{
+					"filename": "pipeout.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 28,
+						"y": 31,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bird1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 31,
+						"h": 24
+					},
+					"frame": {
+						"x": 32,
+						"y": 0,
+						"w": 31,
+						"h": 24
+					}
+				},
+				{
+					"filename": "bird2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 31,
+						"h": 20
+					},
+					"frame": {
+						"x": 0,
+						"y": 63,
+						"w": 31,
+						"h": 20
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.5.9"
+	}
+}

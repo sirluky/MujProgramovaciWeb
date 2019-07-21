@@ -5,7 +5,10 @@ draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+desc: "Vlastní 'těžší' verze hry flappy bird, schválně jakého score se vám podaří dosáhnout"
 ---
+
+Vlastní 'těžší' verze hry flappy bird, schválně jakého score se vám podaří dosáhnout
 
 Flappy Bird jako challenge v P5.JS
 

@@ -5,7 +5,10 @@ draft: false
 libs: [PHASER3]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+desc: 'Můj 2 pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější.'
 ---
+
+Můj 2 pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější, s frameworkem Phaser 3.
 
 Zdrojak naleznete <a href="https://github.com/sirluky/phaser-games/tree/flappybird">zde</a>
 

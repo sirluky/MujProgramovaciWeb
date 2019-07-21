@@ -6,6 +6,7 @@ libs: [JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
 mobile: true
+desc: 'Moje prvni hra, kterou jsem kdy, vytvoril.'
 ---
 
 <link rel="stylesheet" type="text/css" href="cookiegame.css">

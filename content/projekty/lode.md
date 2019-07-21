@@ -6,6 +6,5 @@ libs: [REACT.JS, REDUX, NODE.JS]
 thub: 'https://place-hold.it/640x360'
 redirect: 'http://lode.ga'
 tags: [hry]
+desc: 'Zahrejte si s kamošema klasické lodě online.'
 ---
-
-Zahrejte si s kamošema klasické lodě online.

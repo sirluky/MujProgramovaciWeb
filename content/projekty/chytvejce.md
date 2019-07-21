@@ -5,6 +5,7 @@ draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+desc: 'Meme staré verze ruské hry Egg Hatches.'
 ---
 
 Modernizovaná" verze staré ruské hry chyť vejce. Hra se ovládá klavesami vyznačené přímo v okně hry. Ps: veškerá grafika hry byla vytvořena v malování XD. Můj rekord byl <b>71</b>.

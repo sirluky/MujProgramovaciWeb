@@ -5,9 +5,10 @@ draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+desc: 'Inspirace ve hře Pou, dokutálejte se co nejníže  '
 ---
 
-Použij šipky k pohybu, a dokutálej se co nejníže.
+Použij šipky k pohybu, a dokutálej se co nejníže. Inspirace ve hře Pou.
 
 <h3>
 Vaše Score: <span id="score">0</span>.

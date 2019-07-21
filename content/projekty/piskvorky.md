@@ -5,6 +5,7 @@ draft: false
 libs: [P5.JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+desc: 'Klasická verze piškvorek na 15x15 ploše, pro 2 hráče'
 ---
 
 Tato hra je mnou naprogramována v javascriptu s frameworkem p5.js

@@ -6,6 +6,7 @@ libs: [JS, P5.JS]
 thub: 'https://place-hold.it/640x360'
 tags: [kalkulacka]
 mobile: true
+desc: 'Převaděč z libovolné číselné soustavy do druhé'
 ---
 
 <script language="javascript" type="text/javascript" src="sketch.js"></script>

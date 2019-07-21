@@ -1,16 +1,14 @@
 ---
-title: 'Hledání min'
-date: 2019-06-23T19:30:35+02:00
-libs: ['P5.JS']
+title: Hledání min
 desc: 'Moje verze hledání min, moje nejoblíbenější "jednoduchá" hra vůbec.'
+tags:
+  - hry
+date: 2019-06-23T17:30:35.000Z
 thub: 'https://place-hold.it/640x360'
-draft: false
-tags: [hry]
 ---
-
 Toto je mnou naprogramovaná verze hry Hledani min (minesweeper),<!--more--> v budoucnu plánuji přidat scorecounter, časovac, opravit/vylepšit generátor rozpoložující miny a nekolik dalších vecí vylepšující hratelnost.
 
-Moje moje nejoblíbenější "jednoduchá" hra vůbec.
+Moje nejoblíbenější vlastní hra vůbec.
 
 <div id="keschovani">
     pocet min <input type="text" id="pocetmin" value="50">

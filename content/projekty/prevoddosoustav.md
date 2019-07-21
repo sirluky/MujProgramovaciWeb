@@ -1,5 +1,5 @@
 ---
-title: 'Převody mezi číselnými soustavami'
+title: 'Převody mezi soustavami'
 date: 2019-06-25T13:15:13+02:00
 draft: false
 libs: [JS, P5.JS]

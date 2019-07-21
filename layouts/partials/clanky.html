@@ -19,12 +19,17 @@
     </div>
 
     <p>
+      {{if .Params.desc}}
+      {{if (len .Params.desc) lt 10}}
+      {{.Params.desc}}
+      {{ end }}
+      {{ else }}
       {{substr .Summary 0 100 }}
       {{if (len .Summary) lt 100}}
       ...
+      {{ end }}
+      {{ end }}
     </p>
-
-    {{ end }}
   </article>
   {{ end }}
 </section>

@@ -7,3 +7,5 @@ thub: 'https://place-hold.it/640x360'
 redirect: 'http://lode.ga'
 tags: [hry]
 ---
+
+Zahrejte si s kamošema klasické lodě online.

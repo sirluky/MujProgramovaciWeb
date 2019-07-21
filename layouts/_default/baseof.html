@@ -79,7 +79,11 @@
     {{block "Head" .}}
     <!-- prettier-ignore -->
     {{end}}
-    <title>Muj Programovací Web</title>
+    <!-- prettier-ignore -->
+    {{block "Title" .}}
+    <title>{{.Title}} | MPW</title>
+    <!-- prettier-ignore -->
+    {{ end}}
   </head>
 
   <body class="">

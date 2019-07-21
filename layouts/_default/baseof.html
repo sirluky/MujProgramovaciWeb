@@ -71,6 +71,9 @@
         width: 20px;
         max-height: 20px;
       }
+      a {
+        text-decoration: underline;
+      }
     </style>
     <!-- prettier-ignore -->
     {{block "Head" .}}
@@ -80,8 +83,11 @@
   </head>
 
   <body class="">
-    <nav class="flex p-5 bg-green-200">
+    <nav class="flex p-5 bg-green-200 justify-between">
       <a href="/" class="text-xl font-bold">MPW</a>
+      {{block "navlink" .}}
+
+      {{ end }}
     </nav>
     <header>
       {{block "header" .}}
@@ -103,6 +109,8 @@
       <img class="photoicon inline-block align-center" src="/logo/HUGO.png" alt="Logo HUGO" />ugo
       <br />
       <img src="https://api.netlify.com/api/v1/badges/e3a165d3-6771-4d00-a2fa-53aaa0505b91/deploy-status" alt="" />
+      <br />
+      <a href="http://kovarlukas.netlify.com">Moje osobní stránka</a>
     </footer>
 
     <!--  </div> -->

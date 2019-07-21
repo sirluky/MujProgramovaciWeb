@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: sirluky/MujProgramovaciWeb
 
 public_folder: 'static/images/'
 

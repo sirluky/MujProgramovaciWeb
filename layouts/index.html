@@ -1,3 +1,6 @@
+{{define "navlink"}}
+<a href="http://mpw.8u.cz">Stará verze</a>
+{{ end }}
 {{define "header"}}
 <h1>
   Vitejte na mém webu, dnes je
@@ -5,10 +8,14 @@
     document.write(new Date().toLocaleDateString().replace(' ', '&nbsp; '));
   </script>
 </h1>
-<p class="max-w-4xl mx-auto">
-  Zde sdílím mnou naprogramované webové aplikace, v jazycích, kterým se věnuji/věnoval. Momentálně nejčastěji programuji
-  v JavaScriptu a používám framework P5.JS, který některé příkazy z JavaScriptu zjednodušuje (hlavně kreslení).
-</p>
+<aside class="intro max-w-4xl mx-auto">
+  <p class="">
+    Zde sdílím mnou naprogramované webové aplikace, v jazycích, kterým se věnuji/věnoval. Většina výtvorů je zde
+    vytvořena za pomocí JavaScriptu a používám framework P5.JS, který některé příkazy z JavaScriptu zjednodušuje (hlavně
+    kreslení).
+  </p>
+  <p class="">JavaScript je skvělý jazyk, jelikož cokoliv co napíšete můžete spustit kdekoliv.</p>
+</aside>
 {{ end }}
 
 {{define "content"}}

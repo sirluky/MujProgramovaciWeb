@@ -6,3 +6,7 @@
 .clanky .clanek {
   transition: 100ms;
 }
+.clanky .clanek .hlavni img {
+  width: 100%;
+  height: 66.66666%;
+}

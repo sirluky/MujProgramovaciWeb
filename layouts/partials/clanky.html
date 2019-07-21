@@ -1,0 +1,30 @@
+<section class="clanky flex flex-wrap">
+  {{ range first 12 .Data.Pages }}
+  <article class="shadow shadow-lg   flex-col sm:flex-1 clanek p-4 m-3 rounded bg-green-200 ">
+    <div class="mx-auto  sm:w-56">
+      <div class="libraries flex  justify-around mb-3  ">
+        {{ range.Params.libs }}
+        <img class="block" src="logo/{{.}}.png" />
+
+        {{ end }}
+      </div>
+      <a href="{{.Permalink}}">
+        <div class="hlavni  text-center">
+          <img class="rounded m-auto text-center" src="http://placehold.jp/480x320.png" alt="" />
+          <h2 class="font-mono  font-medium mt-3">
+            {{.Title}}
+          </h2>
+        </div>
+      </a>
+    </div>
+
+    <p>
+      {{substr .Summary 0 100 }}
+      {{if (len .Summary) lt 100}}
+      ...
+    </p>
+
+    {{ end }}
+  </article>
+  {{ end }}
+</section>

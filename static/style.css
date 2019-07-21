@@ -1,0 +1,8 @@
+.clanky .clanek:hover {
+  transform: scale(1.07);
+  transition: 300ms;
+}
+
+.clanky .clanek {
+  transition: 100ms;
+}

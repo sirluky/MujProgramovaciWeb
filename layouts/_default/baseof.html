@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/siema@1.5.1/dist/siema.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-
     <style>
       @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
       .bgColor,
@@ -64,11 +65,9 @@
         display: block;
         margin: auto;
       }
-      .libraries {
-        display: inline-block;
-        text-align: center;
-      }
-      .libraries img {
+
+      .libraries img,
+      .photoicon {
         width: 20px;
         max-height: 20px;
       }
@@ -98,9 +97,14 @@
 
       {{ end }}
     </main>
-    <footer class="text-center" id="info_footer">
-      Vytvořil Lukáš Kovář 2019
+    <hr class="shadow border border-gray-300" />
+    <footer class="text-center pb-5 mt-2" id="info_footer">
+      Vytvořil Lukáš Kovář 2019, s frameworkem
+      <img class="photoicon inline-block align-center" src="/logo/HUGO.png" alt="Logo HUGO" />ugo
+      <br />
+      <img src="https://api.netlify.com/api/v1/badges/e3a165d3-6771-4d00-a2fa-53aaa0505b91/deploy-status" alt="" />
     </footer>
+
     <!--  </div> -->
   </body>
 </html>

@@ -13,16 +13,5 @@
 
 {{define "content"}}
 <h2>Nejnovější</h2>
-<section>
-  {{ range first 50 .Data.Pages }}
-  <article>
-    <a href="{{.Permalink}}">{{.Title}}</a>
-    <div class="libraries">
-      {{ range.Params.libs }}
-      <img src="logo/{{.}}.png" />
-      {{ end }}
-    </div>
-  </article>
-  {{ end }}
-</section>
+{{ partial "clanky" . }}
 {{ end }}

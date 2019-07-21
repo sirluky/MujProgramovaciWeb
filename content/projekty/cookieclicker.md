@@ -5,6 +5,7 @@ draft: false
 libs: [JS]
 thub: 'https://place-hold.it/640x360'
 tags: [hry]
+mobile: true
 ---
 
 <link rel="stylesheet" type="text/css" href="cookiegame.css">

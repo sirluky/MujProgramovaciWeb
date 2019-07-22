@@ -2,7 +2,14 @@ baseURL = "https://mpw.netlify.com/"
 languageCode = "en-us"
 title = "Můj Programovací Web"
 pluralizelisttitles = "false"
+author = "Lukáš Kovář"
+description = "Web kde sdílím svoje projekty. Většina výtvorů je zde vytvořena za pomocí JavaScriptu a používám framework P5.JS"
+languageCode = "cs-CZ"
+enableRobotsTXT = true
+canonifyURLs = true
 
+[permalinks]
+    post = "/projekty/:title/"
     
 [sitemap]
   changefreq = "monthly"

@@ -3,7 +3,7 @@ title: Flappy bird
 desc: 'Můj 2 pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější.'
 tags:
   - hry
-date: 2019-07-22T17:50:00.000Z
+date: 2019-07-22T17:53:00.000Z
 thub: 'https://place-hold.it/640x360'
 libs:
   - PHASER3

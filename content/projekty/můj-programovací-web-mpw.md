@@ -6,7 +6,7 @@ tags:
 date: 2019-06-10T20:23:38.477Z
 libs:
   - HUGO
-  - NETLIFY.CMS
+  - NETLIFYCMS
 redirect: /
 ---
  

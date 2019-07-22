@@ -3,7 +3,7 @@ title: Jeden Bitcoin
 desc: 'Jednoduchá stránka, ukazující aktuální cenu kryptoměny Bitcoin.'
 tags:
   - ostatní
-date: 2019-07-22T21:19:04.088Z
+date: 2019-06-23T18:01:00.000Z
 libs:
   - P5.JS
 redirect: 'http://jedenbitcoin.tk/'

@@ -3,7 +3,7 @@ title: Hra Tetroid
 desc: 'Verze hry Tetroid v mém podání, dosáhněte co nejvyššího score'
 tags:
   - hry
-date: 2019-07-22T17:53:00.000Z
+date: 2019-07-22T17:52:00.000Z
 thub: 'https://place-hold.it/640x360'
 libs:
   - P5.JS

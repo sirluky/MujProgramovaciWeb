@@ -83,6 +83,44 @@
       iframe {
         margin: auto;
       }
+
+      .mcontent ol {
+        list-style-type: decimal;
+      }
+      .mcontent ul {
+        list-style-type: circle;
+      }
+      .mcontent ol {
+        counter-reset: item;
+      }
+
+      .mcontent ol > li {
+        text-indent: -25px;
+        list-style-type: none;
+        counter-increment: item;
+      }
+
+      .mcontent ol > li:before {
+        display: inline-block;
+        width: 1em;
+        padding-right: 0.5em;
+        font-weight: bold;
+        text-align: right;
+        content: counter(item) '.';
+      }
+      .mcontent ol,
+      ul {
+        padding-left: 50px;
+        text-align: left;
+      }
+      .mcontent ol li,
+      ul li {
+        padding-left: 4px;
+      }
+      .mcontent button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     </style>
     <!-- prettier-ignore -->
     {{block "Head" .}}
@@ -111,7 +149,7 @@
 
     {{ end }} -->
     <!-- <div class="bg-gray-200">-->
-    <main class="max-w-4xl mx-auto" style="min-height: 600px ">
+    <main class="max-w-4xl mx-auto mcontent" style="min-height: 600px ">
       {{block "content" .}}
 
       {{ end }}

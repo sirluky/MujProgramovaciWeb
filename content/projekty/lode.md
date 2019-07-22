@@ -1,10 +1,16 @@
 ---
-title: 'Lodě'
-date: 2019-06-25T20:09:36+02:00
-draft: false
-libs: [REACT.JS, REDUX, NODE.JS]
+title: Lodě
+desc: >-
+  Zahrejte si s kamošema klasické lodě online. Moje první multiplayer hra po
+  síti.
+tags:
+  - hry
+date: 2019-06-25T18:09:36.000Z
 thub: 'https://place-hold.it/640x360'
+libs:
+  - REACT.JS
+  - REDUX
+  - NODE.JS
 redirect: 'http://lode.ga'
-tags: [hry]
-desc: 'Zahrejte si s kamošema klasické lodě online.'
 ---
+ 

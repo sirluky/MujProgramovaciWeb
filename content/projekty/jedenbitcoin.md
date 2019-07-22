@@ -1,5 +1,5 @@
 ---
-title: JedenBitcoin
+title: Jeden Bitcoin
 desc: 'Jednoduchá stránka, ukazující aktuální cenu kryptoměny Bitcoin.'
 tags:
   - weby

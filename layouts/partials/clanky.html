@@ -62,6 +62,8 @@
   </script> -->
 
   <script>
+    let filterTriggerred = false;
+
     let indexesToChange = [];
     let clanky = {};
     let clankyDOM = document.querySelectorAll('.clanky .clanek');
@@ -87,7 +89,12 @@
     filterDOM.onchange = handleChange;
     function handleChange(c) {
       const selectedValue = filterDOM.options[filterDOM.selectedIndex].getAttribute('value');
-
+      /*  if (filterTriggerred === false) {
+        filterTriggerred = true;
+        for (let i = 0; i < clankyDOM.length; i++) {
+          clankyDOM[i].className += ' animated';
+        }
+      }  */
       if (selectedValue !== 'all') {
         indexesToChange = indexesToChange.map(v => {
           return false;
@@ -109,9 +116,12 @@
           clankyDOM[i].style.display = 'block';
         }
       }
+      let y = window.scrollY;
+      window.scrollTo(window.scrollX, y + 1);
+      window.scrollTo(window.scrollX, y);
     }
   </script>
   <script>
-    new WOW({ live: true }).init();
+    new WOW().init({ live: false });
   </script>
 </section>

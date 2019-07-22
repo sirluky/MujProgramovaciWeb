@@ -8,6 +8,7 @@ libs:
   - P5.JS
 redirect: ''
 ---
+
 Bakterie jsou obdoba buněčného automatu, který vymyslel britský matematik John Horton Conway v roce 1970. Celou tuto hru řídí čtyři jednoduchá pravidla:
 
 1. Živá bakterie s méně, než dvěma živými sousedy umírá.
@@ -16,3 +17,6 @@ Bakterie jsou obdoba buněčného automatu, který vymyslel britský matematik J
 4. Mrtvá bakterie, s přesně třemi živými sousedy, opět ožívá.
 
 Pokud tuto hru neznáte, doporučuji se podívat na [Pixelorezovo video](https://www.youtube.com/watch?v=zXRE9ZoVo94)
+
+<script src="goflifeAlg.js"></script>
+<script src="sketch.js"></script>

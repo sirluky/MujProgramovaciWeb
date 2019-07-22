@@ -5,7 +5,7 @@ desc: >-
   síti.
 tags:
   - hry
-date: 2019-06-25T18:09:36.000Z
+date: 2019-07-22T17:56:00.000Z
 thub: 'https://place-hold.it/640x360'
 libs:
   - REACT.JS

@@ -1,8 +1,8 @@
 ---
 title: Dropdown
 desc: >-
-  Inspirace ve hře Pou, dokutálejte se co nejníže, než narazíte na vrch a skore
-  porovnejte s ostatníma.
+  Inspirace ve hře Pou, dokutálejte se co nejníže, než narazíte na vrch a
+  dosahněte co nejvyššího score.
 tags:
   - hry
 date: 2019-06-24T08:02:00.000Z

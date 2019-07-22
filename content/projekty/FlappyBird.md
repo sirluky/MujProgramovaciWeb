@@ -8,8 +8,10 @@ thub: 'https://place-hold.it/640x360'
 libs:
   - PHASER3
 ---
+
 Můj druhý pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější, s frameworkem Phaser 3.
 
 Zdrojak naleznete <a href="https://github.com/sirluky/phaser-games/tree/flappybird">zde</a>
 
-<script src="src.5d7828e2.js"></script>
+<iframe src="/projektfull/flappybird" width="645" height="485">
+</iframe>

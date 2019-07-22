@@ -4,8 +4,7 @@
 
 <section class="clanky flex flex-wrap">
   {{$mujindex := 0}}
-  {{ range first 200 .Data.Pages }}
-
+  {{ range first 200 (where .Data.Pages "Dir" "projekty/") }}
   <article
     data-tags="{{.Params.tags}}"
     data-title="{{.Title}}"
@@ -110,5 +109,8 @@
         }
       }
     }
+  </script>
+  <script>
+    new WOW({}).init();
   </script>
 </section>

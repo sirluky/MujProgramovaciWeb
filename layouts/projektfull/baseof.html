@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <!-- prettier-ignore -->
+    {{block "Head" .}}
+    <!-- prettier-ignore -->
+    {{end}}
+    <!-- prettier-ignore -->
+    {{block "Title" .}}
+    <title>{{.Title}} | MPW</title>
+    <!-- prettier-ignore -->
+    {{ end}}
+  </head>
+
+  <body class="">
+    {{block "content" .}}
+
+    {{ end }}
+  </body>
+</html>

@@ -9,4 +9,4 @@ libs:
   - PHASER3
 ---
 
-<script src="src.5d7828e2.js" defer></script>
+<script src="src.5d7828e2.js"></script>

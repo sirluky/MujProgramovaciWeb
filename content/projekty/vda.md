@@ -5,7 +5,7 @@ desc: >-
   generátoru Hugo
 tags:
   - weby
-date: 2019-07-22T19:41:26.695Z
+date: 2019-06-25T08:20:00.000Z
 thub: /static/images/vda.png
 libs:
   - TAILWIND.CSS

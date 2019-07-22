@@ -1,11 +1,12 @@
 ---
-title: 'Hra Tetroid'
-date: 2019-06-25T12:02:26+02:00
-draft: false
-libs: [P5.JS]
-thub: 'https://place-hold.it/640x360'
-tags: [hry]
+title: Hra Tetroid
 desc: 'Verze hry Tetroid v mém podání, dosáhněte co nejvyššího score'
+tags:
+  - hry
+date: 2019-07-22T17:50:00.000Z
+thub: 'https://place-hold.it/640x360'
+libs:
+  - P5.JS
 ---
 
 Verze hry Tetroid v mém podání, dosáhněte co nejvyššího score, hra se sama průběžně ukládá a při dalším spuštění můžete pokračovat.

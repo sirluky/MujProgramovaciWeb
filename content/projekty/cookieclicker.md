@@ -1,12 +1,12 @@
 ---
-title: 'Sušenko-clicker'
-date: 2019-06-25T11:47:49+02:00
-draft: false
-libs: [JS]
+title: Sušenko-clicker
+desc: 'Moje prvni hra, kterou jsem kdy, vytvoril. Napodobenina hry Cookie Clicker.'
+tags:
+  - hry
+date: 2019-06-25T09:47:49.000Z
 thub: 'https://place-hold.it/640x360'
-tags: [hry]
-mobile: true
-desc: 'Moje prvni hra, kterou jsem kdy, vytvoril.'
+libs:
+  - JS
 ---
 
 <link rel="stylesheet" type="text/css" href="cookiegame.css">

@@ -5,7 +5,7 @@ desc: >-
   zkušenost, první web na Gatsby.JS.
 tags:
   - weby
-date: 2019-07-22T19:54:13.916Z
+date: 2019-06-25T08:22:00.000Z
 libs:
   - GATSBY.JS
   - WORDPRESS

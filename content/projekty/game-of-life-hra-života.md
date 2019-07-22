@@ -3,7 +3,7 @@ title: Game of Life ("hra" života)
 desc: Populární "matematická hra" řídící se jednoduchýmy pravidly...
 tags:
   - hry
-date: 2019-07-22T16:49:35.341Z
+date: 2019-07-22T03:30:00.000Z
 libs:
   - P5.JS
 redirect: ''

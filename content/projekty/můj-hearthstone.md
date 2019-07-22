@@ -7,7 +7,7 @@ desc: >-
   psaním zkončil.
 tags:
   - weby
-date: 2019-07-22T20:13:48.352Z
+date: 2019-07-01T20:13:00.000Z
 libs:
   - WORDPRESS
 redirect: 'http://mujhearthstone.4fan.cz'

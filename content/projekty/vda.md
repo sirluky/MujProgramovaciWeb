@@ -1,5 +1,5 @@
 ---
-title: VDA
+title: VDA napodobenina
 desc: >-
   "Kopie" stránek naší školy, s použítím flexboxu, gridu, Tailwind CSS a
   generátoru Hugo

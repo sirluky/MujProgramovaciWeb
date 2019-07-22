@@ -1,5 +1,4 @@
 baseURL = "https://mpw.netlify.com/"
-languageCode = "en-us"
 title = "Můj Programovací Web"
 pluralizelisttitles = "false"
 author = "Lukáš Kovář"

@@ -1,6 +1,18 @@
+<select name="clanky_filter" id="clanky_filter">
+  <option value="all" selected>všechno</option>
+</select>
+
 <section class="clanky flex flex-wrap">
-  {{ range first 12 .Data.Pages }}
-  <article class="shadow shadow-lg   flex-col sm:flex-1 clanek p-4 m-3 rounded bg-green-200 ">
+  {{$mujindex := 0}}
+  {{ range first 200 .Data.Pages }}
+
+  <article
+    data-tags="{{.Params.tags}}"
+    data-title="{{.Title}}"
+    class="shadow shadow-lg   flex-col sm:flex-1 clanek p-4 m-3 rounded bg-green-200  fadeIn  {{ if lt $mujindex 3 }}animated{{else}}wow
+    {{ end }}"
+  >
+    {{$mujindex = (add $mujindex 1)}}
     <div class="mx-auto  sm:w-56">
       <div class="libraries flex  justify-around mb-3  ">
         {{ range.Params.libs }}
@@ -10,7 +22,14 @@
       </div>
       <a href="{{.Permalink}}">
         <div class="hlavni  text-center">
-          <img class="rounded m-auto text-center" src="https://placehold.jp/480x320.png" alt="" />
+          <div class="image-wrapper">
+            <div
+              class="image"
+              style="background: lightgray url('https://placehold.jp/480x320.png'); background-size:cover"
+            >
+              <!-- <img class="rounded m-auto text-center" src="https://placehold.jp/480x320.png" alt="" /> -->
+            </div>
+          </div>
           <h2 class="font-mono  font-medium mt-3">
             {{.Title}}
           </h2>
@@ -33,4 +52,63 @@
     </p>
   </article>
   {{ end }}
+  <!-- <script>
+    const app = new Vue({
+      el: '.clanky',
+      data: {
+        message: 'Hello Vue!',
+      },
+    });
+  </script> -->
+
+  <script>
+    let indexesToChange = [];
+    let clanky = {};
+    let clankyDOM = document.querySelectorAll('.clanky .clanek');
+    clankyDOM.forEach((dm, index) => {
+      let nazev = dm.getAttribute('data-tags').replace(/[\[\]]/g, '');
+      const clankynazev = clanky[nazev];
+      if (clankynazev) {
+        clankynazev.push(index);
+      } else {
+        clanky[nazev] = [];
+        clanky[nazev].push(index);
+      }
+      indexesToChange.push(false);
+    });
+    console.log(clanky);
+    const filterDOM = document.querySelector('#clanky_filter');
+    for (let clanek in clanky) {
+      let option = document.createElement('option');
+      option.setAttribute('value', clanek);
+      option.textContent = clanek;
+      filterDOM.appendChild(option);
+    }
+    filterDOM.onchange = handleChange;
+    function handleChange(c) {
+      const selectedValue = filterDOM.options[filterDOM.selectedIndex].getAttribute('value');
+
+      if (selectedValue !== 'all') {
+        indexesToChange = indexesToChange.map(v => {
+          return false;
+        });
+
+        for (let v of clanky[selectedValue]) {
+          indexesToChange[v] = true;
+        }
+
+        for (let i = 0; i < clankyDOM.length; i++) {
+          if (indexesToChange[i] === true) {
+            clankyDOM[i].style.display = 'block';
+          } else {
+            clankyDOM[i].style.display = 'none';
+          }
+        }
+      } else {
+        for (let i = 0; i < clankyDOM.length; i++) {
+          clankyDOM[i].style.display = 'block';
+        }
+      }
+    }
+  </script>
 </section>

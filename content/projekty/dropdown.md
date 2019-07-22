@@ -1,11 +1,14 @@
 ---
-title: 'Dropdown'
-date: 2019-06-24T10:02:00+02:00
-draft: false
-libs: [P5.JS]
+title: Dropdown
+desc: >-
+  Inspirace ve hře Pou, dokutálejte se co nejníže, než narazíte na vrch a skore
+  porovnejte s ostatníma.
+tags:
+  - hry
+date: 2019-06-24T08:02:00.000Z
 thub: 'https://place-hold.it/640x360'
-tags: [hry]
-desc: 'Inspirace ve hře Pou, dokutálejte se co nejníže  '
+libs:
+  - P5.JS
 ---
 
 Použij šipky k pohybu, a dokutálej se co nejníže. Inspirace ve hře Pou.

@@ -10,3 +10,40 @@
   width: 100%;
   height: 66.66666%;
 }
+
+.popupBox svg {
+  background: black;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  z-index: 100;
+  padding: 10px;
+  opacity: 0.2;
+  border-radius: 10px;
+  transition: 100ms;
+}
+
+.popupBox.lock svg {
+  opacity: 0.5;
+}
+.popupBox.lock svg,
+.popupBox.unlock svg {
+  max-width: 50px;
+  color: white;
+}
+.popupBox svg:hover {
+  opacity: 0.9;
+}
+.image-wrapper {
+  position: relative;
+  padding-bottom: 66.666666%;
+  height: 0;
+  overflow: hidden;
+}
+.image-wrapper div.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

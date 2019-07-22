@@ -1,12 +1,15 @@
 ---
-title: 'Převody mezi soustavami'
-date: 2019-06-25T13:15:13+02:00
-draft: false
-libs: [JS, P5.JS]
+title: Převody mezi soustavami
+desc: >-
+  Převaděč z libovolné číselné soustavy do druhé, umí i všechna základní
+  písmena, což znamená až 35 soustavu.
+tags:
+  - kalkulacka
+date: 2019-06-25T11:15:13.000Z
 thub: 'https://place-hold.it/640x360'
-tags: [kalkulacka]
-mobile: true
-desc: 'Převaděč z libovolné číselné soustavy do druhé'
+libs:
+  - JS
+  - P5.JS
 ---
 
 <script language="javascript" type="text/javascript" src="sketch.js"></script>

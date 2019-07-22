@@ -25,96 +25,111 @@
 
 {{define "header"}}
 <h1>{{.Title}}</h1>
-
+<div class="popupBox bg-black lock hidden sm:block " style="visibility: hidden;" title="Zámek scrollování">
+  {{ partial "Icon-lock" . }}
+</div>
+<div class="popupBox bg-black unlock hidden sm:block " style="visibility: visible;" title="Zámek scrollování">
+  {{ partial "Icon-unlock" . }}
+</div>
 {{ end }}
 {{ define "content" }}
 
-<div class="game">
+<div class="game fadeIn animated">
   <button id="screenshot" class="absolute right-0 m-4" style="display: none">Vyfotit</button>
 
   {{.Content}}
 </div>
 
 <script>
-    function disableScrolling(){
-      console.log('scroll disabled')
-      var x=window.scrollX;
-      var y=window.scrollY;
-      window.onscroll=function(){window.scrollTo(x, y);};
-  }
+  const iLock = document.querySelector(".popupBox.lock svg")
+  const iUnLock = document.querySelector(".popupBox.unlock svg")
 
-  function enableScrolling(){
-    console.log('scroll enabled')
-      window.onscroll=function(){};
-  }
-  let eventSet = false;
-  let counts = 0;
-  let placeCanvasInterval
-  window.addEventListener('DOMContentLoaded', event => {
-     placeCanvasInterval = setInterval(function() {
-      let main = document.querySelector('main .game');
-      let IScanvas = document.querySelector('main .game canvas');
-      let canvas = document.querySelector('canvas');
-      EverythingToScope()
+  iLock.addEventListener('click',enableScrolling);
+  iUnLock.addEventListener('click',disableScrolling);
+
+      function disableScrolling(){
+        iLock.style.visibility = "visible"
+        iUnLock.style.visibility = "hidden"
+        console.log('scroll disabled')
+        var x=window.scrollX;
+        var y=window.scrollY;
+        window.onscroll=function(){window.scrollTo(x, y);};
+    }
+
+    function enableScrolling(){
+      iLock.style.visibility = "hidden"
+        iUnLock.style.visibility = "visible"
+      console.log('scroll enabled')
+        window.onscroll=function(){};
+    }
+    let eventSet = false;
+    let counts = 0;
+    let placeCanvasInterval
+    window.addEventListener('DOMContentLoaded', event => {
+       placeCanvasInterval = setInterval(function() {
+        let main = document.querySelector('main .game');
+        let IScanvas = document.querySelector('main .game canvas');
+        let canvas = document.querySelector('canvas');
+        EverythingToScope()
 
 
 
 
 
-      if (!IScanvas && canvas) {
-        document.querySelector('main .game').appendChild(canvas);
-        canvas.style.display = 'block';
+        if (!IScanvas && canvas) {
+          document.querySelector('main .game').appendChild(canvas);
+          canvas.style.display = 'block';
 
 
-          if(canvas !== null && !eventSet){
-             document.body.onclick = function(e){
-              if(e.path[0].id === "defaultCanvas0"){
-              disableScrolling()
-              } else {
-              enableScrolling()
+            if(canvas !== null && !eventSet){
+               document.body.onclick = function(e){
+                if(e.path[0].id === "defaultCanvas0"){
+                disableScrolling()
+                } else {
+                //enableScrolling()
+                }
               }
-            }
 
-           eventSet = true;
+             eventSet = true;
 
-          {{if  in .Params.libs "P5.JS" }}
-          screenshot.style.display = 'block';
-          {{end}}
+            {{if  in .Params.libs "P5.JS" }}
+            screenshot.style.display = 'block';
+            {{end}}
+          }
+
+
+
+
+        }
+      }, 300);
+      let screenshot = document.querySelector('#screenshot');
+      function ScreenShot() {
+        const download = document.createElement('a');
+        download.setAttribute('href', document.querySelector('canvas').toDataURL('png'));
+        download.setAttribute('download', 'screenshot.png');
+        download.textContent = 'Stahnout';
+        download.className = 'absolute right-0 m-4';
+        document.querySelector('.game').replaceChild(download, screenshot);
+      }
+      screenshot.onclick = ScreenShot;
+
+      function EverythingToScope() {
+        let elements = []
+        let bottom = document.querySelector('#info_footer')
+        while (bottom.nextSibling !== null) {
+          bottom = bottom.nextSibling;
+          if (bottom.tagName !== "SCRIPT") {
+            elements.push(bottom)
+          }
         }
 
-
-
-
-      }
-    }, 300);
-    let screenshot = document.querySelector('#screenshot');
-    function ScreenShot() {
-      const download = document.createElement('a');
-      download.setAttribute('href', document.querySelector('canvas').toDataURL('png'));
-      download.setAttribute('download', 'screenshot.png');
-      download.textContent = 'Stahnout';
-      download.className = 'absolute right-0 m-4';
-      document.querySelector('.game').replaceChild(download, screenshot);
-    }
-    screenshot.onclick = ScreenShot;
-
-    function EverythingToScope() {
-      let elements = []
-      let bottom = document.querySelector('#info_footer')
-      while (bottom.nextSibling !== null) {
-        bottom = bottom.nextSibling;
-        if (bottom.tagName !== "SCRIPT") {
-          elements.push(bottom)
+        let game = document.querySelector('.game')
+        for(let i = 0; i < elements.length;i++){
+          game.appendChild(elements[i])
         }
-      }
 
-      let game = document.querySelector('.game')
-      for(let i = 0; i < elements.length;i++){
-        game.appendChild(elements[i])
       }
-
-    }
-  });
+    });
 </script>
 
 {{ end }}

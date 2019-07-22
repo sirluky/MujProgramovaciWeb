@@ -11,7 +11,7 @@
     document.write(new Date().toLocaleDateString().replace(' ', '&nbsp; '));
   </script>
 </h1>
-<aside class="intro max-w-4xl mx-auto">
+<aside class="intro max-w-4xl mx-auto animated fadeIn faster">
   <p class="">
     Zde sdílím mnou naprogramované webové aplikace, v jazycích, kterým se věnuji/věnoval. Většina výtvorů je zde
     vytvořena za pomocí JavaScriptu a používám framework P5.JS, který některé příkazy z JavaScriptu zjednodušuje (hlavně
@@ -22,6 +22,10 @@
 {{ end }}
 
 {{define "content"}}
-<h2>Nejnovější</h2>
+<h2>Moje tvorba</h2>
+<hr class="border border-green-200 opacity-50" />
 {{ partial "clanky" . }}
+{{ end }}
+
+{{define "Head"}}
 {{ end }}

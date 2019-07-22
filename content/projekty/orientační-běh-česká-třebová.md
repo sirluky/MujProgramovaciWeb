@@ -6,6 +6,9 @@ desc: >-
 tags:
   - weby
 date: 2019-07-22T19:54:13.916Z
+libs:
+  - GATSBY.JS
+  - WORDPRESS
 redirect: 'https://obcet.tk'
 ---
  

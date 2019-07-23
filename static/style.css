@@ -55,3 +55,6 @@
 .tech:hover {
   background: rgba(116, 108, 75, 0.068);
 }
+.techbar img {
+  width: 50px;
+}

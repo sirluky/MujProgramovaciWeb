@@ -1,5 +1,5 @@
 {{$BaseName := .File.TranslationBaseName}}
-<div class="pt-4 flex md:justify-center flex-no-wrap flex-shrink-0 overflow-x-scroll md:overflow-hidden pb-3">
+<div class="techbar pt-4 flex md:justify-center flex-no-wrap flex-shrink-0 overflow-x-scroll md:overflow-hidden pb-3">
   {{ range (where .Site.Pages "Dir" "technologie/") }}
   <a
     class="flex-none tech border-b-2 hover:border-yellow-700 {{if eq .File.TranslationBaseName $BaseName}} border-b-2 border-yellow-400 techHighlight 

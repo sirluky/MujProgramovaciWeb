@@ -1,5 +1,5 @@
 ---
-title: Game of Life ("hra"&nbps;života)
+title: Game of Life ("hra" života)
 desc: Populární "matematická hra" řídící se jednoduchýmy pravidly...
 tags:
   - hry

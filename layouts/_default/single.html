@@ -39,7 +39,30 @@
 
   {{.Content}}
 </div>
-{{ template "_internal/disqus.html" . }}
+{{$libs := .Params.libs}}
+<div class="libs mt-16 pb-10">
+  <h2 class="text-lg">Použité Technologie</h2>
+  <hr class="border border-green-200 opacity-75 bg-green-200">
+  {{ range.Site.Pages }}
+  {{if in $libs .File.TranslationBaseName  }}
+  <ul class="px-6 lg:px-12 pt-6 ">
+    <li class="pb-2 float-left list-none sm:list-disc">
+      <img class="inline-block pr-4 float-left " src="/logo/{{.File.TranslationBaseName}}.png" />
+      <div class="pt-1 inline"
+        >{{.Title}},
+        <a class="text-green-800 " href="/technologie/{{ lower (.File.TranslationBaseName) }}"> Více informací</a></span
+      >
+    </li>
+  </ul>
+  <div class="clearfix"></div>
+  {{ end }}
+  {{ end }}
+</div>
+<br />
+<div class="disqus px-2">
+    {{ template "_internal/disqus.html" . }}
+</div>
+
 
 <script>
   const iLock = document.querySelector('.popupBox.lock svg');

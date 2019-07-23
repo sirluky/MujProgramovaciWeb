@@ -1,12 +1,17 @@
-<label for="clanky_filter">Filtr:</label>
-<select
-  name="clanky_filter"
-  style="background: lightyellow;"
-  class="border border-2 border-black text-lg font-medium p-1 px-3"
-  id="clanky_filter"
->
-  <option value="all" selected>všechno</option>
-</select>
+<div class="bar flex justify-between">
+  <div class="">
+    <label for="clanky_filter">Filtr:</label>
+    <select
+      name="clanky_filter"
+      style="background: lightyellow;"
+      class="border border-2 border-black text-lg font-medium p-1 px-3"
+      id="clanky_filter"
+    >
+      <option value="all" selected>všechno</option>
+    </select>
+  </div>
+  <a href="technologie/">Seznam Technologií</a>
+</div>
 
 <section class="clanky flex flex-wrap">
   {{$mujindex := 0}}

@@ -1,0 +1,21 @@
+{{define "header"}}
+<h1>Seznam Technologií</h1>
+
+{{ end }}
+{{define "content"}}
+
+{{ partial "technologie/logos" . }}
+<div class="animated fadeInUp">
+  <h2>{{.Title}}</h2>
+  <section class="content">
+    {{.Content}}
+  </section>
+</div>
+<style>
+  img {
+    margin: 10px;
+    text-align: left;
+    display: inline-block;
+  }
+</style>
+{{ end }}

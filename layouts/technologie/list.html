@@ -1,0 +1,31 @@
+{{define "header"}}
+<h1>Seznam Technologií</h1>
+
+{{ end }}
+
+{{define "content"}}
+<div class="animated fadeInUp">
+  {{ partial "technologie/logos" . }}
+
+  <!-- https://bulma.io/ https://tailwindcss.com/ http://vanilla-js.com/-->
+  {{/* <img src="/logo/BULMA.CSS.png" alt="CSS Framework Bulma" />
+  <img src="/logo/TAILWIND.CSS.png" alt="Utility-first CSS framework Tailwind.CSS" />
+  <img src="/logo/JS.png" alt="JavaScript" />
+  <img src="/logo/HUGO.png" alt="Statický generátor HUGO" />
+  <img src="/logo/NETLIFYCMS.png" alt="Headless CMS - Netlify CMS" />
+  <img src="/logo/NODE.JS.png" alt="Serverový JavaScript" />
+  <img src="/logo/P5.JS.png" alt='P5.JS - "Takové JQuery na kreslení"' />
+  <img src="/logo/PHASER3.png" alt="Herní Javascriptový Framework" />
+  <img src="/logo/REACT.JS.png" alt="REACT.JS - pro vytváření webových komponent" />
+  <img src="/logo/VUE.JS.png" alt="VUE.JS -Takový jednodušší 'REACT.JS'" />
+  <img src="/logo/WORDPRESS.png" alt="Wordpress, nejpopulárnější CMS na světě" />
+  <img src="/logo/GATSBY.JS.png" alt="Generátor statických stránek" /> */}} Rozklikněte Libovoné logo
+</div>
+<style>
+  img {
+    margin: 10px;
+    text-align: left;
+    display: inline-block;
+  }
+</style>
+{{ end }}

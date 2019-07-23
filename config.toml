@@ -6,6 +6,7 @@ description = "Web kde sdílím svoje projekty. Většina výtvorů je zde vytvo
 languageCode = "cs-CZ"
 enableRobotsTXT = true
 canonifyURLs = true
+googleAnalytics = "UA-144365131-1"
 
 [permalinks]
     post = "/projekty/:title/"

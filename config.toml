@@ -7,6 +7,7 @@ languageCode = "cs-CZ"
 enableRobotsTXT = true
 canonifyURLs = true
 googleAnalytics = "UA-144365131-1"
+disqusShortname = "muj-programovaci-web"
 
 [permalinks]
     post = "/projekty/:title/"

@@ -10,6 +10,7 @@ thub: 'https://place-hold.it/640x360'
 libs:
   - JS
   - P5.JS
+mobile: true
 ---
 
 <script language="javascript" type="text/javascript" src="sketch.js"></script>

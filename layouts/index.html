@@ -26,6 +26,8 @@
 <h2 class="text-3xl">Moje projekty</h2>
 <hr class="border border-green-200 opacity-50" />
 {{ partial "clanky" . }}
+<h2 class="text-3xl pt-8">Názory na Web</h2>
+{{ template "_internal/disqus.html" . }}
 {{ end }}
 
 {{define "Head"}}

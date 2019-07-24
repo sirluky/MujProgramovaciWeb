@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sirluky/MujProgramovaciWeb
 
-public_folder: 'static/images/'
+public_folder: 'images/'
 
 media_folder: 'static/images/'
 

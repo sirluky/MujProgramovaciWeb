@@ -13,5 +13,5 @@ Můj druhý pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější
 
 Zdrojak naleznete <a href="https://github.com/sirluky/phaser-games/tree/flappybird">zde</a>
 
-<iframe src="/projektfull/flappybird" width="645" height="485">
+<iframe src="/projektfull/flappybird" width="655" height="495">
 </iframe>

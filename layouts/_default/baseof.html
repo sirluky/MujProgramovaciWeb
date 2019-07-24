@@ -12,13 +12,14 @@
     />
     <meta name="theme-color" content="#30544A" />
     <link rel="stylesheet" href="/style.css" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.2/shuffle.min.js"></script>
 
     <!-- Zmenit na prod, verzi -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+
     <style>
       @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
       .bgColor,
@@ -49,6 +50,15 @@
         margin: 5px 0px;
         padding: 5px;
       }
+
+      canvas {
+        display: none;
+        margin: auto;
+      }
+
+      a {
+        text-decoration: underline;
+      }
       .game button,
       input {
         padding: 5px;
@@ -57,87 +67,16 @@
         display: block;
         margin: auto;
       }
-      .game {
-        text-align: center;
-      }
-
-      canvas {
-        display: none;
-        margin: auto;
-      }
       .game canvas,
       img,
       video {
         display: block;
         margin: auto;
       }
-
-      .libraries img,
-      .photoicon {
-        width: 20px;
-        max-height: 20px;
-      }
-      a {
-        text-decoration: underline;
-      }
-      main.mcontent a {
-        color: #1c4e37;
-      }
-      main.mcontent .clanky a {
-        color: #3b2809;
-      }
-      iframe {
-        margin: auto;
-      }
-
-      .mcontent ol {
-        list-style-type: decimal;
-      }
-      .mcontent ul {
-        list-style-type: circle;
-      }
-      .mcontent ol {
-        counter-reset: item;
-      }
-
-      .mcontent ol > li {
-        text-indent: -25px;
-        list-style-type: none;
-        counter-increment: item;
-      }
-
-      .mcontent ol > li:before {
-        display: inline-block;
-        width: 1em;
-        padding-right: 0.5em;
-        font-weight: bold;
-        text-align: right;
-        content: counter(item) '.';
-      }
-      .mcontent ol,
-      ul {
-        padding-left: 50px;
-        text-align: left;
-      }
-      .mcontent ol li,
-      ul li {
-        padding-left: 4px;
-      }
-      .mcontent button {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .float-unset {
-        float: unset;
-      }
-      .mcontent img,
-      iframe {
-        padding: 5px;
-      }
-      .mcontent iframe {
-        overflow: scroll;
+      .mcontent .game iframe {
       }
     </style>
+
     {{ partial "seo_schema" . }}
     <!-- prettier-ignore -->
     {{block "Head" .}}

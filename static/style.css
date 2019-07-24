@@ -10,7 +10,9 @@
   width: 100%;
   height: 66.66666%;
 }
-
+.navcolor {
+  background: #c6f6d5 url(/images/navbg.png);
+}
 .popupBox svg {
   background: black;
   position: fixed;

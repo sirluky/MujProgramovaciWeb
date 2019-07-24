@@ -23,10 +23,10 @@
       @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
       .bgColor,
       body {
-        background: #e7ffde;
+        background: #e7ffde url(/images/bg.png) repeat;
       }
       h1 {
-        background: lightyellow;
+        background: rgba(255, 255, 224, 0.8);
         text-align: center;
         margin: auto;
         font-family: 'Open Sans', sans-serif;
@@ -90,7 +90,7 @@
   </head>
 
   <body class="">
-    <nav class="flex p-5 bg-green-200 justify-between">
+    <nav class="flex p-5 navcolor justify-between">
       <a href="/" class="text-xl font-bold">MPW</a>
       {{block "navlink" .}}
 

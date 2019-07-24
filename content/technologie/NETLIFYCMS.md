@@ -7,9 +7,10 @@ libs:
   - NETLIFYCMS
 link: 'https://www.netlifycms.org/'
 ---
+
 CMS neboli (Content-Management-System/Redakční systému), je hodně. Ať už jde o Wordpress, Drupal, Ghost a spoustu dalších. Někdy, ale tyto systémy dělají až moc práce, mají vlastní šablonovací systém, kterého je problém se zbavit, když ho nepotřebujete a chcete ho používat pouze ke správě obsahu.
 
-![](/static/images/netlifycmslogo.png)
+![](/images/netlifycmslogo.png)
 
 Jedním z Headless CMS je Netlify CMS, který je unikátní v tom že zapisuje změny přímo do vašeho Git repozitáře v Markdown Formátu.
 

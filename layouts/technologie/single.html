@@ -8,7 +8,17 @@
 <div class="animated fadeInUp">
   <h2>{{.Title}}</h2>
   <section class="content">
+    {{if lt (len .Content) 10}}
+    <p>
+      Článek o této technologii ještě není napsán{{if .Params.link}}, ale můžete se podívat na jejich
+      <a href="{{.Params.link}}">Officiální stránky</a>{{ end }}.
+    </p>
+    {{else}}
     {{.Content}}
+    {{if .Params.link}}
+    <small class="pl-3 text-base ">Více naleznete na <a href="{{.Params.link}}">Officiálních stránkách</a></small>
+    {{ end }}
+    {{ end }}
   </section>
 </div>
 <style>

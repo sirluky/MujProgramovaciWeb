@@ -11,7 +11,7 @@
     {{if lt (len .Content) 10}}
     <p>
       Článek o této technologii ještě není napsán{{if .Params.link}}, ale můžete se podívat na jejich
-      <a href="{{.Params.link}}">Officiální stránky</a>{{ end }}.
+      <a target="_blank" rel="noopener noreferrer" href="{{.Params.link}}">Officiální stránky</a>{{ end }}.
     </p>
     {{else}}
     {{.Content}}

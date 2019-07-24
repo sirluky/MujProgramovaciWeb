@@ -11,7 +11,7 @@ link: 'https://tailwindcss.com/'
 Tailwind CSS, je něco mezi CSS Frameworkem a klasickým psaním tříd.
 Narozdíl od např:Bootstrapu máte volné ruce a můžete vše nastylovat tak jak chcete, několika třídama nastavíte styly všeho co potřebujete, ukázka níže.
 
-<div class="overflow-x-scroll">
+<div class="overflow-x-scroll md:overflow-x-hidden">
 <iframe src="https://tailwindcss.com//workflow-animation" class="border-0 mx-auto overflow-x-scroll w-full" style="width:40rem; height: 30rem;"></iframe>
 </div>
 Na druhou stranu stylování dá více práce než u Bootstrapu, jelikož tam prvky vypadají dobře out-of-the-box.

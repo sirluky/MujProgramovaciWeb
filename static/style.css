@@ -58,3 +58,73 @@
 .techbar img {
   width: 50px;
 }
+
+.game {
+  text-align: center;
+}
+.libraries img,
+.photoicon {
+  width: 20px;
+  max-height: 20px;
+}
+main.mcontent a {
+  color: #1c4e37;
+}
+main.mcontent .clanky a {
+  color: #3b2809;
+}
+iframe {
+  margin: auto;
+}
+
+.mcontent ol {
+  list-style-type: decimal;
+}
+.mcontent ul {
+  list-style-type: circle;
+}
+.mcontent ol {
+  counter-reset: item;
+}
+
+.mcontent ol > li {
+  text-indent: -25px;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+.mcontent ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) '.';
+}
+.mcontent ol,
+ul {
+  padding-left: 50px;
+  text-align: left;
+}
+.mcontent ol li,
+ul li {
+  padding-left: 4px;
+}
+.mcontent button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.float-unset {
+  float: unset;
+}
+.mcontent img,
+iframe {
+  padding: 5px;
+}
+.mcontent .technologie iframe {
+  overflow: auto;
+}
+
+.clanky .clanek img {
+  padding: 0;
+}

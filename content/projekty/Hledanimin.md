@@ -4,9 +4,10 @@ desc: 'Moje verze hledání min, moje nejoblíbenější "jednoduchá" hra vůbe
 tags:
   - hry
 date: 2019-07-22T17:55:00.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/miny-32.png
 libs:
   - P5.JS
+mobile: false
 ---
 
 Toto je mnou naprogramovaná verze hry Hledani min (minesweeper),<!--more--> v budoucnu plánuji přidat scorecounter, časovac, opravit/vylepšit generátor rozpoložující miny a nekolik dalších vecí vylepšující hratelnost.

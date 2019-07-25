@@ -6,9 +6,11 @@ desc: >-
 tags:
   - weby
 date: 2019-06-25T08:22:00.000Z
+thub: /images/obcet.png
 libs:
   - GATSBY.JS
   - WORDPRESS
 redirect: 'https://obcet.tk'
+mobile: false
 ---
  

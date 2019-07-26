@@ -1,11 +1,13 @@
 ---
-title: 'Hra Snake (Had)'
-date: 2019-06-24T10:08:48+02:00
-draft: false
-libs: [P5.JS]
-thub: 'https://place-hold.it/640x360'
-tags: [hry]
-desc: 'Moje první P5.JS hra vůbec. Jedná se o klasickou verzi snake'
+title: Hra Snake (Had)
+desc: Moje první P5.JS hra vůbec. Jedná se o klasickou verzi snake
+tags:
+  - hry
+date: 2019-06-24T08:08:48.000Z
+thub: /images/snake.png
+libs:
+  - P5.JS
+mobile: false
 ---
 
 <p>Moje první P5.JS hra vůbec. Jedná se o klasickou verzi snake. Ovládání šipkama.</p>

@@ -24,7 +24,7 @@
   >
     {{$mujindex = (add $mujindex 1)}}
     <div class="mx-auto  sm:w-56">
-      <div class="libraries flex  justify-around mb-3  ">
+      <div class="libraries flex justify-around mb-3  ">
         {{ range.Params.libs }}
         <img class="block" src="logo/{{.}}.png" />
 
@@ -35,7 +35,8 @@
           <div class="image-wrapper">
             <div
               class="image"
-              style="background: lightgray url('https://placehold.jp/480x320.png'); background-size:cover"
+              style="background: lightgray url('{{if .Params.thub}}{{.Params.thub}}{{else}}https://placehold.jp/480x320.png
+              {{ end }}'); background-size:cover"
             >
               <!-- <img class="rounded m-auto text-center" src="https://placehold.jp/480x320.png" alt="" /> -->
             </div>

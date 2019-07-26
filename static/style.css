@@ -69,6 +69,11 @@
   width: 20px;
   max-height: 20px;
 }
+.libraries {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px;
+  border-radius: 3px;
+}
 main.mcontent a {
   color: #1c4e37;
 }

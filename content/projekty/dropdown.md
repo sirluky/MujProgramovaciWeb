@@ -6,9 +6,10 @@ desc: >-
 tags:
   - hry
 date: 2019-06-24T08:02:00.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/dropdown.png
 libs:
   - P5.JS
+mobile: false
 ---
 
 Použij šipky k pohybu, a dokutálej se co nejníže. Inspirace ve hře Pou.

@@ -6,9 +6,10 @@ desc: >-
 tags:
   - hry
 date: 2019-06-25T08:23:57.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/chytvejce.png
 libs:
   - P5.JS
+mobile: false
 ---
 
 Modernizovaná" verze staré ruské hry chyť vejce. Hra se ovládá klavesami vyznačené přímo v okně hry. Ps: veškerá grafika hry byla vytvořena v malování XD. Můj rekord byl <b>71</b>.

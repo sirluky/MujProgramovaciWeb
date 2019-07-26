@@ -26,8 +26,9 @@
     <div class="mx-auto  sm:w-56">
       <div class="libraries flex justify-around mb-3  ">
         {{ range.Params.libs }}
-        <img class="block" src="logo/{{.}}.png" />
-
+        <a href="/technologie/{{(lower .)}}">
+          <img class="block" src="logo/{{.}}.png" />
+        </a>
         {{ end }}
       </div>
       <a href="{{.Permalink}}">

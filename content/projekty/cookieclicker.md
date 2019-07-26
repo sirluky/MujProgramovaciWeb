@@ -4,9 +4,10 @@ desc: 'Moje prvni hra, kterou jsem kdy, vytvoril. Napodobenina hry Cookie Clicke
 tags:
   - hry
 date: 2019-06-25T09:47:49.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/susenky.png
 libs:
   - JS
+mobile: false
 ---
 
 <link rel="stylesheet" type="text/css" href="cookiegame.css">

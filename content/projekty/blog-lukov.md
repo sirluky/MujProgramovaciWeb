@@ -4,8 +4,10 @@ desc: "Můj blog o technologiích a zajímavých aplikacích. V době kdy jsem t
 tags:
   - weby
 date: 2019-06-25T09:30:00.000Z
+thub: /images/lukov.png
 libs:
   - WORDPRESS
 redirect: 'http://l-u-k-ov.8u.cz'
+mobile: false
 ---
  

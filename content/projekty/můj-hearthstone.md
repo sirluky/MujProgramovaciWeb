@@ -8,8 +8,10 @@ desc: >-
 tags:
   - weby
 date: 2019-07-01T20:13:00.000Z
+thub: /images/mujhearthstone.png
 libs:
   - WORDPRESS
 redirect: 'http://mujhearthstone.4fan.cz'
+mobile: true
 ---
  

@@ -4,9 +4,10 @@ desc: 'Verze hry Tetroid v mém podání, dosáhněte co nejvyššího score'
 tags:
   - hry
 date: 2019-07-22T17:52:00.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/tetroid.png
 libs:
   - P5.JS
+mobile: false
 ---
 
 Verze hry Tetroid v mém podání, dosáhněte co nejvyššího score, hra se sama průběžně ukládá a při dalším spuštění můžete pokračovat.

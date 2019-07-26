@@ -74,7 +74,33 @@
       }
       .mcontent .game iframe {
       }
+      .logogrow{
+        width:0px;
+        display: inline-block;
+        overflow: hidden;
+        transition: width 0.8s;
+      }
+      .onhovergrow hr {
+        width: 0;
+    
+        opacity: 0;
+        transition: opacity 0.1s, width 0.1s;
+      }
+     
+      .onhovergrow hr{
+        width: 0;
+
+        opacity: 0;
+        transition: opacity 0.5s, width 1s;
+      }
+      .onhovergrow:hover hr {
+        width: 40px;
+    
+        opacity: 1;
+      }
+      
     </style>
+    
 
     {{ partial "seo_schema" . }}
     <!-- prettier-ignore -->
@@ -91,7 +117,14 @@
 
   <body class="">
     <nav class="flex p-5 navcolor justify-between">
-      <a href="/" class="text-xl font-bold">MPW</a>
+      <div class="onhovergrow w-12  sm:w-auto">
+      <a href="/" class="text-xl font-bold no-underline flex  ">
+        M<span class="logogrow">ůj</span> P<span class="logogrow">rogramovací</span> W<span class="logogrow"
+          >eb</span>
+        </a>
+        <hr class="border border-green-600  border-b-2 -mt-2">
+      </div>
+      </div>
       {{block "navlink" .}}
 
       {{ end }}

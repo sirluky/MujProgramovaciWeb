@@ -1,12 +1,15 @@
 ---
 title: Tetris
 desc: >-
-  Starší pokus o naprogramování tetrisu, neobsahuje scorecounter a obsahuje několik chyb. Přesto vám nic nebrání si ho vyzkoušet zahrát.
+  Starší pokus o naprogramování tetrisu, neobsahuje scorecounter a obsahuje
+  několik chyb. Přesto vám nic nebrání si ho vyzkoušet zahrát.
 tags:
   - hry
 date: 2019-07-01T20:13:01.000Z
+thub: /images/tetris.png
 libs:
   - P5.JS
+mobile: false
 ---
 
 Starší pokus o naprogramování tetrisu, neobsahuje scorecounter a obsahuje několik chyb. Přesto vám nic nebrání si ho vyzkoušet zahrát.

@@ -4,9 +4,10 @@ desc: 'Můj 2 pokus o vytvoření kopie Flappy Bird, tentokrát propracovanějš
 tags:
   - hry
 date: 2019-07-22T17:53:00.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/flappy.png
 libs:
   - PHASER3
+mobile: false
 ---
 
 Můj druhý pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější, s frameworkem Phaser 3.

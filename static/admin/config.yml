@@ -22,7 +22,8 @@ collections:
       - { label: 'Obsah', name: 'body', widget: 'markdown' }
       - { label: 'Knihovny', name: 'libs', widget: 'list', required: false }
       - { label: 'Redirect', name: 'redirect', widget: 'string', required: false }
-      - { label: 'Podpora mobilního zobrazení', name: 'mobile', widget: 'boolean', default: false }
+      - { label: 'Podpora mobilního zobrazení', name: 'mobile', widget: 'boolean', default: false, required: false }
+      - { label: 'Scroll Lock', name: 'scroll', widget: 'boolean', default: false, required: false }
 
   - name: 'Iframed' # Used in routes, e.g., /admin/collections/blog
     label: 'Iframed projekty' # Used in the UI

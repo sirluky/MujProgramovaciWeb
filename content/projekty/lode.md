@@ -6,11 +6,12 @@ desc: >-
 tags:
   - hry
 date: 2019-07-22T17:56:00.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/lode.png
 libs:
   - REACT.JS
   - REDUX
   - NODE.JS
 redirect: 'http://lode.ga'
+mobile: false
 ---
  

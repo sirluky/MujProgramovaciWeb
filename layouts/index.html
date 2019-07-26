@@ -1,46 +1,41 @@
 {{define "Head"}}
 <style>
-  .logogrow:nth-child(1),
-  .logogrow:nth-child(3) {
-    animation: logoanim3 1.6s ease;
-  }
-  .logogrow:nth-child(2) {
-    animation: logoanim12 1.5s ease;
-  }
   .onhovergrow:hover .logogrow:nth-child(1),
   .onhovergrow:hover .logogrow:nth-child(3) {
-    width: 23px;
+    width: var(--logosize3);
   }
   .onhovergrow:hover .logogrow:nth-child(2) {
-    width: 120px;
+    width: var(--logosize12);
   }
-
-  .onhovergrow hr {
-    width: 0;
-
-    opacity: 0;
-    transition: opacity 0.5s, width 1s;
+  .onhovergrow .logogrow:nth-child(1),
+  .onhovergrow .logogrow:nth-child(3) {
+    width: var(--logosize3);
+  }
+  .onhovergrow .logogrow:nth-child(2) {
+    width: var(--logosize12);
+  }
+  .onhovergrow .logogrow {
+    display: block;
   }
   .onhovergrow:hover hr {
     width: 210px;
 
     opacity: 1;
   }
-
   @keyframes logoanim3 {
     0% {
       width: 0px;
     }
-    50% {
-      width: 30px;
+    100% {
+      width: var(--logosize3);
     }
   }
   @keyframes logoanim12 {
     0% {
       width: 0px;
     }
-    50% {
-      width: 120px;
+    100% {
+      width: var(--logosize12);
     }
   }
 </style>
@@ -56,7 +51,7 @@
 <a href="https://github.com/sirluky/">
   <img src="/logo/GITHUB.svg" class="w-8 h-8 -mt-1 animated delay-1s fadeIn" alt="Github logo"
 /></a>
-<a href="http://mpw.8u.cz">Stará verze</a>
+<a href="http://mpw.8u.cz" class="sm:w-64 text-right">Stará verze</a>
 {{ end }}
 {{define "header"}}
 <h1>

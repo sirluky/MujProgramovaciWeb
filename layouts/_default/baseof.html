@@ -11,8 +11,14 @@
       crossorigin="anonymous"
     />
     <meta name="theme-color" content="#30544A" />
+    <style>
+      :root{
+        --logosize3: 22px;
+        --logosize12: 118px;
+      }
+    </style>
     <link rel="stylesheet" href="/style.css" />
-
+    
     <!-- Zmenit na prod, verzi -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
@@ -20,6 +26,9 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 
     <style>
+        :root {
+          --main-bg-color: brown;
+        }
       @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
       .bgColor,
       body {
@@ -74,13 +83,75 @@
       }
       .mcontent .game iframe {
       }
-      .logogrow{
-        width:0px;
-        display: inline-block;
+      
+      .onhovergrow .logogrow {
         overflow: hidden;
-        transition: width 0.8s;
+       
       }
+      /*
+      .onhovergrow:hover .logogrow:nth-child(1),
+      .onhovergrow:hover .logogrow:nth-child(3) {
+        width: var(--logosize3);
+      }
+      .onhovergrow:hover .logogrow:nth-child(2) {
+        width: var(--logosize12);
+      } 
+      .onhovergrow .logogrow:nth-child(1),
+      .onhovergrow .logogrow:nth-child(3) {
+        width: var(--logosize3);
+      }
+      .onhovergrow .logogrow:nth-child(2) {
+        width: var(--logosize12);
+      }*/
+      
+    
       .onhovergrow hr {
+        width: 0;
+    
+        opacity: 0;
+        transition: opacity 0.5s, width 1s;
+      }
+      .logogrow:nth-child(1),
+  .logogrow:nth-child(3) {
+    animation: logoanim3 1.6s ease;
+  }
+  .logogrow:nth-child(2) {
+    animation: logoanim12 1.5s ease;
+
+  }
+  .logogrow{
+width: 0px;    
+  }
+      @keyframes logoanim3 {
+        
+        0% {
+          width: var(--logosize3);
+        }
+        0.0001% {
+          width: var(--logosize3);
+        }
+        20% {
+          width: var(--logosize3);
+        }
+        100% {
+          width: 0px;
+        }
+      }
+      @keyframes logoanim12 {
+        0% {
+          width: var(--logosize12);
+        }
+        0.0001% {
+          width: var(--logosize12);
+        }
+        20% {
+          width: var(--logosize12);
+        }
+        100% {
+          width: 0px;
+        }
+      }
+     /* .onhovergrow hr {
         width: 0;
     
         opacity: 0;
@@ -93,8 +164,9 @@
         opacity: 0;
         transition: opacity 0.5s, width 1s;
       }
+    */  
       .onhovergrow:hover hr {
-        width: 40px;
+        width: 40px; /* 40px */
     
         opacity: 1;
       }
@@ -119,7 +191,7 @@
     <nav class="flex p-5 navcolor justify-between">
       <div class="onhovergrow w-12  sm:w-auto">
       <a href="/" class="text-xl font-bold no-underline flex  ">
-        M<span class="logogrow">ůj</span> P<span class="logogrow">rogramovací</span> W<span class="logogrow"
+        M<span class="logogrow w-0 sm:w-auto">ůj</span> P<span class="logogrow w-0 sm:w-auto">rogramovací</span> W<span class="logogrow hidden sm:inline-block"
           >eb</span>
         </a>
         <hr class="border border-green-600  border-b-2 -mt-2">

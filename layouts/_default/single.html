@@ -1,4 +1,6 @@
 {{define "Head"}}
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
 {{ if not .Params.mobile }}
 <meta name="viewport" content="width=1280" />
 {{ end }}
@@ -21,14 +23,21 @@
 <script src="{{.}}"></script>
 {{else}}{{ end }}
 {{ end }}
+<style>
+    .popupBox{
+      right: 142px;
+      top: 60px;
+    }
+</style>
 {{ end }}
+
 
 {{define "header"}}
 <h1>{{.Title}}</h1>
-<div class="popupBox bg-black lock hidden sm:block " style="visibility: hidden;" title="Zámek scrollování">
+<div class="popupBox bg-black lock hidden sm:block fixed" style="visibility: hidden;"  data-tippy-content="Zamknout scrollování" >
   {{ partial "Icon-lock" . }}
 </div>
-<div class="popupBox bg-black unlock hidden sm:block " style="visibility: visible;" title="Zámek scrollování">
+<div class="popupBox bg-black unlock hidden sm:block fixed " style="visibility: visible;" data-tippy-content="Odemknout scrollování">
   {{ partial "Icon-unlock" . }}
 </div>
 {{ end }}
@@ -156,6 +165,8 @@
       }
     }
   });
+  tippy('.popupBox')
 </script>
+
 
 {{ end }}

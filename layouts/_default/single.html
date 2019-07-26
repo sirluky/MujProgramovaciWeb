@@ -34,10 +34,10 @@
 
 {{define "header"}}
 <h1>{{.Title}}</h1>
-<div class="popupBox bg-black lock hidden sm:block fixed" style="visibility: hidden;"  data-tippy-content="Zamknout scrollování" >
+<div class="popupBox bg-black lock hidden sm:block fixed" style="visibility: hidden;" data-tippy-content="Odemknout scrollování"   >
   {{ partial "Icon-lock" . }}
 </div>
-<div class="popupBox bg-black unlock hidden sm:block fixed " style="visibility: visible;" data-tippy-content="Odemknout scrollování">
+<div class="popupBox bg-black unlock hidden sm:block fixed " style="visibility: visible;" data-tippy-content="Zamknout scrollování" >
   {{ partial "Icon-unlock" . }}
 </div>
 {{ end }}

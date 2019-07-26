@@ -4,9 +4,11 @@ desc: Populární "matematická hra" řídící se jednoduchýmy pravidly...
 tags:
   - hry
 date: 2019-06-23T18:00:00.000Z
+thub: /images/goflife.png
 libs:
   - P5.JS
 redirect: ''
+mobile: false
 ---
 
 Bakterie jsou obdoba buněčného automatu, který vymyslel britský matematik John Horton Conway v roce 1970. Celou tuto hru řídí čtyři jednoduchá pravidla:

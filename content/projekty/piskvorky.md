@@ -1,11 +1,13 @@
 ---
-title: 'hra Piškvorky'
-date: 2019-06-25T11:17:53+02:00
-draft: false
-libs: [P5.JS]
-thub: 'https://place-hold.it/640x360'
-tags: [hry]
+title: hra Piškvorky
 desc: 'Klasická verze piškvorek na 15x15 ploše, pro 2 hráče'
+tags:
+  - hry
+date: 2019-06-25T09:17:53.000Z
+thub: /images/piskvorky.png
+libs:
+  - P5.JS
+mobile: false
 ---
 
 Tato hra je mnou naprogramována v javascriptu s frameworkem p5.js

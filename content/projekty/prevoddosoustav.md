@@ -6,7 +6,7 @@ desc: >-
 tags:
   - kalkulacka
 date: 2019-06-25T11:15:13.000Z
-thub: 'https://place-hold.it/640x360'
+thub: /images/prevody.png
 libs:
   - JS
   - P5.JS

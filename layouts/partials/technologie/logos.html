@@ -8,6 +8,7 @@
     class="flex-none tech border-b-2 hover:border-yellow-700 {{if eq .File.TranslationBaseName $BaseName}} border-b-2 border-yellow-400 techHighlight 
     {{ end }}"
     href="{{.Permalink}}"
+    data-tippy="{{(substr .File.TranslationBaseName 0 1)}}{{(substr (lower .File.TranslationBaseName) 1)}}"
   >
     <img src="/logo/{{.File.TranslationBaseName}}.png" alt=""
   /></a>

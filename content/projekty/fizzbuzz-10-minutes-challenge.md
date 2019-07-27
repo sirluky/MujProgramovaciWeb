@@ -6,6 +6,8 @@ desc: >-
 tags:
   - ostatní
 date: 2019-07-27T07:50:04.277Z
+libs:
+  - P5.JS
 mobile: false
 scroll: false
 ---

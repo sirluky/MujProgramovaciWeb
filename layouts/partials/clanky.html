@@ -26,7 +26,7 @@
     <div class="mx-auto  sm:w-56">
       <div class="libraries flex justify-around mb-3  ">
         {{ range.Params.libs }}
-        <a href="/technologie/{{(lower .)}}">
+        <a href="/technologie/{{(lower .)}}" data-tippy="{{(substr . 0 1)}}{{(substr (lower .) 1)}}">
           <img class="block" src="logo/{{.}}.png" />
         </a>
         {{ end }}
@@ -133,7 +133,10 @@
       window.scrollTo(window.scrollX, y);
     }
   </script>
+
   <script>
-    new WOW().init({ live: false, mobile: false });
+    document.onload = function() {
+      new WOW().init({ live: false, mobile: false });
+    };
   </script>
 </section>

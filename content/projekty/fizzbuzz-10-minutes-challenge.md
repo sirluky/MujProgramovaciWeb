@@ -5,7 +5,7 @@ desc: >-
   pravidla a pak hned psal. Zbývající čas jsem poté využil k úpravě designu.
 tags:
   - ostatní
-date: 2019-07-27T07:50:04.277Z
+date: 2019-07-22T16:29:00.000Z
 thub: /images/fizzbuzz.png
 libs:
   - P5.JS

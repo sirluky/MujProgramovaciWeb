@@ -1,4 +1,4 @@
-baseURL = "https://mpw.netlify.com/"
+baseURL = "https://programovaciweb.tk"
 title = "Můj Programovací Web"
 pluralizelisttitles = "false"
 author = "Lukáš Kovář"
@@ -13,6 +13,6 @@ disqusShortname = "muj-programovaci-web"
     post = "/projekty/:title/"
     
 [sitemap]
-  changefreq = "monthly"
+  changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5

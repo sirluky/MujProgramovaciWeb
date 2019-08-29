@@ -4,24 +4,30 @@
   .onhovergrow:hover .logogrow:nth-child(3) {
     width: var(--logosize3);
   }
+
   .onhovergrow:hover .logogrow:nth-child(2) {
     width: var(--logosize12);
   }
+
   .onhovergrow .logogrow:nth-child(1),
   .onhovergrow .logogrow:nth-child(3) {
     width: var(--logosize3);
   }
+
   .onhovergrow .logogrow:nth-child(2) {
     width: var(--logosize12);
   }
+
   .onhovergrow .logogrow {
     display: block;
   }
+
   .onhovergrow:hover hr {
-    width: 210px;
+    width: 220px;
 
     opacity: 1;
   }
+
   @keyframes logoanim3 {
     0% {
       width: 0px;
@@ -33,6 +39,7 @@
       opacity: 1;
     }
   }
+
   @keyframes logoanim12 {
     0% {
       width: 0px;
@@ -45,18 +52,16 @@
     }
   }
 </style>
-<meta
-  name="description"
-  content="Web kde sdílím svoje projekty. Většina výtvorů je zde vytvořena za pomocí JavaScriptu a používám framework P5.JS"
-/>
+<meta name="description"
+  content="Web kde sdílím svoje projekty. Většina výtvorů je zde vytvořena za pomocí JavaScriptu a používám framework P5.JS" />
 {{ end }}
 {{define "Title"}}
 <title>Můj Programovací Web</title>
 {{ end }}
 {{define "navlink"}}
 <a href="https://github.com/sirluky/">
-  <img src="/logo/GITHUB.svg" data-tippy="Github" class="w-8 h-8 -mt-1 animated delay-1s fadeIn" alt="Github logo"
-/></a>
+  <img src="/logo/GITHUB.svg" data-tippy="Github" class="w-8 h-8 -mt-1 animated delay-1s fadeIn"
+    alt="Github logo" /></a>
 <a href="http://mpw.8u.cz" class="sm:w-64 text-right">Stará verze</a>
 {{ end }}
 {{define "header"}}

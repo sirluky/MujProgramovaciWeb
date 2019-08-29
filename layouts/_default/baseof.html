@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <meta name="theme-color" content="#30544A" />
-    <style>
-      :root{
-        --logosize3: 22px;
-        --logosize12: 118px;
-      }
-    </style>
-    <link rel="stylesheet" href="/style.css" />
-    
-    <!-- Zmenit na prod, verzi -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 
-    <style>
-        :root {
-          --main-bg-color: brown;
-        }
-      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-      .bgColor,
-      body {
-        background: #e7ffde url(/images/bg.png) repeat;
-      }
-      h1 {
-        background: rgba(255, 255, 224, 0.8);
-        text-align: center;
-        margin: auto;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 2.5rem;
-        margin-top: 25px;
-        padding: 5px;
-      }
-      h2 {
-        text-align: center;
-        font-weight: 500;
-        font-size: 1.2rem;
-      }
-      section article {
-        text-align: center;
-      }
-      p {
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-        margin: 5px 0px;
-        padding: 5px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <meta name="theme-color" content="#30544A" />
+  <style>
+    :root {
+      --logosize3: 24px;
+      --logosize12: 124px;
+    }
+  </style>
+  <link rel="stylesheet" href="/style.css" />
 
-      canvas {
-        display: none;
-        margin: auto;
-      }
+  <!-- Zmenit na prod, verzi -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 
-      a {
-        text-decoration: underline;
-      }
-      .game button,
-      input {
-        padding: 5px;
-        background: lightgray;
-        border-radius: 3px;
-        display: block;
-        margin: auto;
-      }
-      .game canvas,
-      img,
-      video {
-        display: block;
-        margin: auto;
-      }
-      .mcontent .game iframe {
-      }
-      
-      .onhovergrow .logogrow {
-        overflow: hidden;
-       
-      }
-      /*
+  <style>
+    :root {
+      --main-bg-color: brown;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    .bgColor,
+    body {
+      background: #e7ffde url(/images/bg.png) repeat;
+    }
+
+    h1 {
+      background: rgba(255, 255, 224, 0.8);
+      text-align: center;
+      margin: auto;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-top: 25px;
+      padding: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    section article {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 5px 0px;
+      padding: 5px;
+    }
+
+    canvas {
+      display: none;
+      margin: auto;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    .game button,
+    input {
+      padding: 5px;
+      background: lightgray;
+      border-radius: 3px;
+      display: block;
+      margin: auto;
+    }
+
+    .game canvas,
+    img,
+    video {
+      display: block;
+      margin: auto;
+    }
+
+    .mcontent .game iframe {}
+
+    .onhovergrow .logogrow {
+      overflow: hidden;
+
+    }
+
+    /*
       .onhovergrow:hover .logogrow:nth-child(1),
       .onhovergrow:hover .logogrow:nth-child(3) {
         width: var(--logosize3);
@@ -103,73 +109,87 @@
       .onhovergrow .logogrow:nth-child(2) {
         width: var(--logosize12);
       }*/
-      
-    
-      .onhovergrow hr {
-        width: 0;
-    
+
+
+    .onhovergrow hr {
+      width: 0;
+
+      opacity: 0;
+      transition: opacity 0.5s, width 1s;
+    }
+
+    .logogrow:nth-child(1),
+    .logogrow:nth-child(3) {
+      animation: logoanim3 1.6s ease;
+    }
+
+    .logogrow:nth-child(2) {
+      animation: logoanim12 1.5s ease;
+
+    }
+
+    .logogrow {
+      width: 0px;
+    }
+
+    @keyframes logoanim3 {
+
+      0% {
+        width: var(--logosize3);
+        opacity: 1;
+      }
+
+      0.0001% {
+        width: var(--logosize3);
+        opacity: 1;
+
+      }
+
+      20% {
+        width: var(--logosize3);
+        opacity: 1;
+      }
+
+      90% {
         opacity: 0;
-        transition: opacity 0.5s, width 1s;
       }
-      .logogrow:nth-child(1),
-  .logogrow:nth-child(3) {
-    animation: logoanim3 1.6s ease;
-  }
-  .logogrow:nth-child(2) {
-    animation: logoanim12 1.5s ease;
 
-  }
-  .logogrow{
-width: 0px;    
-  }
-      @keyframes logoanim3 {
-        
-        0% {
-          width: var(--logosize3);
-          opacity: 1;
-        }
-        0.0001% {
-          width: var(--logosize3);
-          opacity: 1;
+      100% {
+        width: 0px;
+        opacity: 0;
 
-        }
-        20% {
-          width: var(--logosize3);
-          opacity: 1;
-        }
-        90%{
-          opacity: 0;
-        }
-        100% {
-          width: 0px;
-          opacity: 0;
-
-        }
       }
-      @keyframes logoanim12 {
-        0% {
-          width: var(--logosize12);
-          opacity: 1;
+    }
 
-        }
-        0.0001% {
-          width: var(--logosize12);
-        }
-        20% {
-          width: var(--logosize12);
-          opacity: 1;
+    @keyframes logoanim12 {
+      0% {
+        width: var(--logosize12);
+        opacity: 1;
 
-        }
-        90%{
-          opacity: 0;
-        }
-        100% {
-          width: 0px;
-          opacity: 0;
-
-        }
       }
-     /* .onhovergrow hr {
+
+      0.0001% {
+        width: var(--logosize12);
+      }
+
+      20% {
+        width: var(--logosize12);
+        opacity: 1;
+
+      }
+
+      90% {
+        opacity: 0;
+      }
+
+      100% {
+        width: 0px;
+        opacity: 0;
+
+      }
+    }
+
+    /* .onhovergrow hr {
         width: 0;
     
         opacity: 0;
@@ -182,72 +202,73 @@ width: 0px;
         opacity: 0;
         transition: opacity 0.5s, width 1s;
       }
-    */  
-      .onhovergrow:hover hr {
-        width: 40px; /* 40px */
-    
-        opacity: 1;
-      }
-      
-    </style>
-    {{ partial "seo_schema" . }}
-    <!-- prettier-ignore -->
-    {{block "Head" .}}
-    <!-- prettier-ignore -->
-    {{end}}
-    <!-- prettier-ignore -->
-    {{block "Title" .}}
-    {{ template "_internal/google_analytics.html" . }}
-    <title>{{.Title}} | MPW</title>
-    <!-- prettier-ignore -->
-    {{ end}}
-  </head>
+    */
+    .onhovergrow:hover hr {
+      width: 40px;
+      /* 40px */
 
-  <body class="">
-    <nav class="flex p-5 navcolor justify-between">
-      <div class="onhovergrow w-12  sm:w-auto">
+      opacity: 1;
+    }
+  </style>
+  {{ partial "seo_schema" . }}
+  <!-- prettier-ignore -->
+  {{block "Head" .}}
+  <!-- prettier-ignore -->
+  {{end}}
+  <!-- prettier-ignore -->
+  {{block "Title" .}}
+  {{ template "_internal/google_analytics.html" . }}
+  <title>{{.Title}} | MPW</title>
+  <!-- prettier-ignore -->
+  {{ end}}
+</head>
+
+<body class="">
+  <nav class="flex p-5 navcolor justify-between">
+    <div class="onhovergrow w-12  sm:w-auto">
       <a href="/" class="text-xl font-bold no-underline flex  ">
-        M<span class="logogrow w-0 sm:w-auto">ůj</span> P<span class="logogrow w-0 sm:w-auto">rogramovací</span> W<span class="logogrow hidden sm:inline-block"
-          >eb</span>
-        </a>
-        <hr class="border border-green-600  border-b-2 -mt-2">
-      </div>
-      </div>
-      {{block "navlink" .}}
+        M<span class="logogrow w-0 sm:w-auto">ůj</span> P<span class="logogrow w-0 sm:w-auto">rogramovací</span> W<span
+          class="logogrow hidden sm:inline-block">eb</span>
+      </a>
+      <hr class="border border-green-600  border-b-2 -mt-2">
+    </div>
+    </div>
+    {{block "navlink" .}}
 
-      {{ end }}
-    </nav>
-    <header>
-      {{block "header" .}}
-      {{.Title}}
-      {{ end }}
-    </header>
-    <!-- {{block "main" .}}
+    {{ end }}
+  </nav>
+  <header>
+    {{block "header" .}}
+    {{.Title}}
+    {{ end }}
+  </header>
+  <!-- {{block "main" .}}
 
     {{ end }} -->
-    <!-- <div class="bg-gray-200">-->
-    <main class="max-w-4xl mx-auto mcontent" style="min-height: 600px ">
-      {{block "content" .}}
+  <!-- <div class="bg-gray-200">-->
+  <main class="max-w-4xl mx-auto mcontent sm:px-3" style="min-height: 600px ">
+    {{block "content" .}}
 
-      {{ end }}
-    </main>
-    <hr class="shadow border border-gray-300 mt-8" />
-    <footer class="text-center pb-5 mt-3" id="info_footer">
-      Vytvořil Lukáš Kovář 2019, s frameworkem
-      <img class="photoicon inline-block align-center m-0" src="/logo/HUGO.png" alt="Logo HUGO" />ugo
-      <br />
-      <img src="https://api.netlify.com/api/v1/badges/e3a165d3-6771-4d00-a2fa-53aaa0505b91/deploy-status" alt="" />
-      <br />
-      <a href="http://kovarlukas.netlify.com">Moje osobní stránka</a>
-    </footer>
-    <script>
-      
-    </script>
+    {{ end }}
+  </main>
+  <hr class="shadow border border-gray-300 mt-8" />
+  <footer class="text-center pb-5 mt-3" id="info_footer">
+    Vytvořil Lukáš Kovář 2019, s frameworkem
+    <img class="photoicon inline-block align-center m-0" src="/logo/HUGO.png" alt="Logo HUGO" />ugo
+    <br />
+    <img src="https://api.netlify.com/api/v1/badges/e3a165d3-6771-4d00-a2fa-53aaa0505b91/deploy-status" alt="" />
+    <br />
+    <a href="http://kovarlukas.netlify.com">Moje osobní stránka</a>
+  </footer>
+  <script>
 
-    <!--  </div> -->
-    
-    <script src="https://unpkg.com/popper.js@1" ></script>
-    <script src="https://unpkg.com/tippy.js@4" ></script>
-  
-  </body>
+  </script>
+
+  <!--  </div> -->
+
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+
+</body>
+
 </html>

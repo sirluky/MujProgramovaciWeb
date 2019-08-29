@@ -25,20 +25,22 @@
 {{else}}{{ end }}
 {{ end }}
 <style>
-    .popupBox{
-      right: 142px;
-      top: 60px;
-    }
+  .popupBox {
+    right: 142px;
+    top: 60px;
+  }
 </style>
 {{ end }}
 
 
 {{define "header"}}
 <h1>{{.Title}}</h1>
-<div class="popupBox bg-black lock hidden sm:block fixed" style="visibility: hidden;" data-tippy="Odemknout scrollování"   >
+<div class="popupBox bg-black lock hidden sm:block fixed" style="visibility: hidden;"
+  data-tippy="Odemknout scrollování">
   {{ partial "Icon-lock" . }}
 </div>
-<div class="popupBox bg-black unlock hidden sm:block fixed " style="visibility: visible;" data-tippy="Zamknout scrollování" >
+<div class="popupBox bg-black unlock hidden sm:block fixed " style="visibility: visible;"
+  data-tippy="Zamknout scrollování">
   {{ partial "Icon-unlock" . }}
 </div>
 {{ end }}
@@ -53,24 +55,25 @@
 <div class="libs mt-16 pb-10">
   <h2 class="text-lg">Použité Technologie</h2>
   <hr class="border border-green-200 opacity-75 bg-green-200">
-  {{ range.Site.Pages }}
-  {{if in $libs .File.TranslationBaseName  }}
-  <ul class="px-6 lg:px-12 pt-6 ">
-    <li class="pb-2 float-left list-none sm:list-disc">
-      <img class="inline-block pr-4 float-left " src="/logo/{{.File.TranslationBaseName}}.png" />
-      <div class="pt-1 inline"
-        >{{.Title}},
-        <a class="text-green-800 " href="/technologie/{{ lower (.File.TranslationBaseName) }}"> Více informací</a></span
-      >
+  <ul class="px-6 lg:px-12 pt-6 flex flex-col  md:flex-row wow fadeInLeft ">
+    {{ range.Site.Pages }}
+    {{if in $libs .File.TranslationBaseName  }}
+    <li class="pb-2 flex-initial   list-none bg-white  p-4 rounded-lg my-2 md:m-6 libs-min-width">
+      <img class="inline-block pr-4 mr-2 float-left " src="/logo/{{.File.TranslationBaseName}}.png" />
+      <div class="pt-1 inline">{{.Title}},
+        <br>
+        <a class="text-green-800 " href="/technologie/{{ lower (.File.TranslationBaseName) }}"> Více
+          informací</a></div>
     </li>
+    {{ end }}
+    {{ end }}
+
   </ul>
-  <div class="clearfix"></div>
-  {{ end }}
-  {{ end }}
+
 </div>
 <br />
 <div class="disqus px-2">
-    {{ template "_internal/disqus.html" . }}
+  {{ template "_internal/disqus.html" . }}
 </div>
 
 
@@ -87,7 +90,7 @@
     console.log('scroll disabled');
     var x = window.scrollX;
     var y = window.scrollY;
-    window.onscroll = function() {
+    window.onscroll = function () {
       window.scrollTo(x, y);
     };
   }
@@ -96,14 +99,14 @@
     iLock.style.visibility = 'hidden';
     iUnLock.style.visibility = 'visible';
     console.log('scroll enabled');
-    window.onscroll = function() {};
+    window.onscroll = function () { };
   }
   let eventSet = false;
   let counts = 0;
   let placeCanvasInterval;
 
   window.addEventListener('DOMContentLoaded', event => {
-    placeCanvasInterval = setInterval(function() {
+    placeCanvasInterval = setInterval(function () {
       let main = document.querySelector('main .game');
       let IScanvas = document.querySelector('main .game canvas');
       let canvas = document.querySelector('canvas');
@@ -166,6 +169,13 @@
       }
     }
   });
+
+
+</script>
+<script>
+  window.onload = function () {
+    new WOW().init({ live: false, mobile: false });
+  };
 </script>
 
 

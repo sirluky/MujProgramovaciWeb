@@ -9,7 +9,7 @@ tags:
 date: 1900-06-10T21:30:00.000Z
 thub: /images/retuvka.png
 libs:
-  - ''
+  - HTML
 redirect: 'https://retuvka.netlify.com'
 mobile: true
 scroll: false

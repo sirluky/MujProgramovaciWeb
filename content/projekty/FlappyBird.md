@@ -9,10 +9,9 @@ libs:
   - PHASER3
 mobile: false
 ---
-
 Můj druhý pokus o vytvoření kopie Flappy Bird, tentokrát propracovanější, s frameworkem Phaser 3.
 
-Zdrojak naleznete <a href="https://github.com/sirluky/phaser-games/tree/flappybird">zde</a>
+Zdrojak naleznete <a href="https://github.com/sirluky/phaser-games/tree/flappybird">**ZDE**</a>
 
 <iframe src="/projektfull/flappybird" width="655" height="495">
 </iframe>

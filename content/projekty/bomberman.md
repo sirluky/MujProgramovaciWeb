@@ -3,7 +3,7 @@ title: Bomberman
 desc: Bomberman v P5.JS
 tags:
   - hry
-date: 2019-09-18T11:29:12.752Z
+date: 2019-06-25T09:17:00.000Z
 thub: /images/bombermanscreen.png
 libs:
   - P5.JS

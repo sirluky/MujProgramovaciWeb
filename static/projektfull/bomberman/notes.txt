@@ -1,0 +1,9 @@
+//1. Add player into player collision
+//2. Add explosion effect
+//- smooth playermovement
+3. Add bomb will kill player when is in the way.
+4. Add hearths to each player.
+6. Create a map editor for this game.
+
+
+And maybe sometime online multiplayer via Socket.IO.

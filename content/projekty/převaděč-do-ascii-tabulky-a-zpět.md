@@ -6,7 +6,7 @@ tags:
 date: 2000-09-25T10:58:00.000Z
 thub: /images/ascii.png
 libs:
-  - JS
+  - VUE.JS
   - BOOTSTRAP.CSS
 redirect: 'https://programovaciweb.tk/projekty/ascii/'
 mobile: false

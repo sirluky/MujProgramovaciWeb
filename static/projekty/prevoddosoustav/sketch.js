@@ -34,6 +34,7 @@ function setup() {
   cislo = createInput('0');
   createP('Ze soustavy:');
   zsous = createInput('10');
+  createP('');
   let vymen = createButton('⇆');
   createP('Do soustavy:');
   dosous = createInput('2');

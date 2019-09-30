@@ -34,6 +34,7 @@ function setup() {
   cislo = createInput('0');
   createP('Ze soustavy:');
   zsous = createInput('10');
+  let vymen = createButton('⇆');
   createP('Do soustavy:');
   dosous = createInput('2');
   createP('');
@@ -41,6 +42,11 @@ function setup() {
   bpocitej.mousePressed(function() {
     vypocitej(cislo.value(), int(zsous.value()), dosous.value());
   });
+  vymen.mousePressed(function(){
+    let pm = zsous.value();
+    zsous.value(dosous.value());
+    dosous.value(pm);
+  })
   vysledek = createP('');
   //    del = createP("nejakej text");
 }

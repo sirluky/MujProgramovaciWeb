@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <title>Ascii</title>
+  </head>
+
+  <body class=" bg-dark">
+    <div class="container text-center" id="root">
+
+      <h1 class="mt-5 display-4 mb-3 text-white">Převaděč do Ascii tabulky a Zpět</h1>
+      <div class="form-group col-sm-12 col-md-6 mx-auto p-4 mt-4 border bg-light rounded">
+        <label for="" class="font-weight-bold ">Znak</label>
+        <input class="form-control text-center h4" type="text" v-model="vstupAscii" @keyup="prevednaAscii" maxlength="1">
+        <br>
+        <label class="font-weight-bold" for="">Ascii Kod</label><input class="form-control text-center h4" type="text" v-model="vstupCis" @keyup="prevednaCis">
+      </div>
+    </div>
+    <script src="ascii.js"></script>
+  </body>
+
+</html>

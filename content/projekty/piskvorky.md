@@ -1,6 +1,6 @@
 ---
 title: hra Piškvorky
-desc: 'Klasická verze piškvorek na 15x15 ploše, pro 2 hráče'
+desc: 'Klasická verze piškvorek na 15x15 ploše, pro 2 hráče.'
 tags:
   - hry
 date: 2019-06-25T09:17:53.000Z

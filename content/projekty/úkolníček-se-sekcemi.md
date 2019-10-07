@@ -1,6 +1,8 @@
 ---
 title: Úkolníček se sekcemi
 desc: ' Jednoduchý úkolníček na čistém JavaScriptu'
+tags:
+  - ostatní
 date: 2019-10-07T13:53:24.407Z
 thub: /images/todosekce.png
 libs:

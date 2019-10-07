@@ -8,6 +8,7 @@ thub: /images/todosekce.png
 libs:
   - JS
   - BOOTSTRAP.CSS
+  - FIREBASE
 redirect: 'https://programovaciweb.tk/projekty/todosekce'
 mobile: true
 scroll: false

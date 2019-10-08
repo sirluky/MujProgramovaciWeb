@@ -192,8 +192,8 @@ function nactiFirebase() {
 
 }
 
-if (!localStorage['ukoly'])
-  vytvorSekci("hlavni");
+//if (!localStorage['ukoly'])
+//  vytvorSekci("hlavni");
 
 
 

@@ -5,7 +5,7 @@ desc: >-
   naopak
 tags:
   - kalkulacka
-date: 2019-10-14T19:36:50.450Z
+date: 2000-09-25T10:59:00.000Z
 thub: /images/mnohouhl.png
 libs:
   - VUE.JS

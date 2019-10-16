@@ -12,7 +12,7 @@ libs:
 mobile: false
 ---
 
-Modernizovaná" verze staré ruské hry chyť vejce. Hra se ovládá klavesami vyznačené přímo v okně hry. Ps: veškerá grafika hry byla vytvořena v malování XD. Můj rekord byl <b>71</b>.
+Modernizovaná" verze staré ruské hry chyť vejce. Hra se ovládá klavesami vyznačené přímo v okně hry. Ps: veškerá grafika hry byla vytvořena v malování XD. Můj rekord byl <b>73</b>.
 
 <script language="javascript" type="text/javascript" src="images.js"></script>
 <script language="javascript" type="text/javascript" src="keys.js"></script>

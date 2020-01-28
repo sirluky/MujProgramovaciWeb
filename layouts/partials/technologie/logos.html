@@ -3,14 +3,25 @@
   V budoucnu budu seznam rozšiřovat s tím jak se budu učit nové věci.
 </div>
 <div class="techbar pt-4 flex md:justify-center flex-no-wrap flex-shrink-0 overflow-x-auto lg:overflow-hidden pb-3">
+
   {{ range (where .Site.Pages "Dir" "technologie/") }}
-  <a
-    class="flex-none tech border-b-2 hover:border-yellow-700 {{if eq .File.TranslationBaseName $BaseName}} border-b-2 border-yellow-400 techHighlight 
-    {{ end }}"
-    href="{{.Permalink}}"
-    data-tippy="{{(substr .File.TranslationBaseName 0 1)}}{{(substr (lower .File.TranslationBaseName) 1)}}"
-  >
-    <img src="/logo/{{.File.TranslationBaseName}}.png" alt=""
-  /></a>
+  <a class="flex-none tech border-b-2 hover:border-yellow-700 {{if eq .File.TranslationBaseName $BaseName}} border-b-2 border-yellow-400 techHighlight 
+    {{ end }}" href="{{.Permalink}}"
+    data-tippy="{{(substr .File.TranslationBaseName 0 1)}}{{(substr (lower .File.TranslationBaseName) 1)}}">
+    <img src="/logo/{{.File.TranslationBaseName}}.png" alt="" /></a>
   {{ end }}
 </div>
+<script>
+  (function () {
+    const el = document.querySelector('.techbar')
+
+    window.addEventListener('beforeunload', function () { localStorage.setItem('scrollX', el.scrollLeft) });
+    setTimeout(() => {
+      if (localStorage.getItem('lastPage') === 'technologie') {
+        el.scrollLeft = localStorage.getItem('scrollX');
+      }
+    }, 100)
+
+
+  })()
+</script>

@@ -255,6 +255,7 @@
   <script src="https://unpkg.com/tippy.js@4"></script>
 
   <script>
+
     // This is the "Offline copy of pages" service worker
 
     // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
@@ -274,6 +275,10 @@
           });
       }
     }
+
+  </script>
+  <script>
+    window.addEventListener('beforeunload', function () { try { localStorage.setItem('lastPage', location.href.split(/\//g)[3]) } catch (err) { localStorage.setItem('lastPage', '') } });
 
   </script>
 </body>

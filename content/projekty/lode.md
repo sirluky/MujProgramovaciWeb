@@ -11,7 +11,7 @@ libs:
   - REACT.JS
   - REDUX
   - NODE.JS
-redirect: 'http://lode.ga'
+redirect: 'https://lode.netlify.com/'
 mobile: false
 ---
- 
+ .

@@ -1,5 +1,5 @@
 ---
-title: Louťáci - Naše Studenská Firma
+title: Louťáci - Naše studenská firma
 desc: >-
   Stránky naší studentské firmy Louťáci, ve které se zaměřujeme na chytrá IOT
   zařízení a vyvijíme náš plně mobilní snímáč kvality ovzduší.

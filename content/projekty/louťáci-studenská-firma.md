@@ -6,7 +6,7 @@ desc: >-
 tags:
   - weby
 date: 2020-02-25T20:10:31.305Z
-thub: images/loutaci.jpg
+thub: images/loutaci (1).jpg
 libs:
   - WORDPRESS
 redirect: 'http://loutaci.cz/'

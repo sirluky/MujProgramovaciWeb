@@ -1,0 +1,103 @@
+{{define "Head"}}
+<style>
+  .onhovergrow:hover .logogrow:nth-child(1),
+  .onhovergrow:hover .logogrow:nth-child(3) {
+    width: var(--logosize3);
+  }
+
+  .onhovergrow:hover .logogrow:nth-child(2) {
+    width: var(--logosize12);
+  }
+
+  .onhovergrow .logogrow:nth-child(1),
+  .onhovergrow .logogrow:nth-child(3) {
+    width: var(--logosize3);
+  }
+
+  .onhovergrow .logogrow:nth-child(2) {
+    width: var(--logosize12);
+  }
+
+  .onhovergrow .logogrow {
+    display: block;
+  }
+
+  .onhovergrow:hover hr {
+    width: 220px;
+
+    opacity: 1;
+  }
+
+  @keyframes logoanim3 {
+    0% {
+      width: 0px;
+      opacity: 0;
+    }
+
+    100% {
+      width: var(--logosize3);
+      opacity: 1;
+    }
+  }
+
+  @keyframes logoanim12 {
+    0% {
+      width: 0px;
+      opacity: 0;
+    }
+
+    100% {
+      width: var(--logosize12);
+      opacity: 1;
+    }
+  }
+</style>
+{{ end }}
+{{define "Title"}}
+<title>Kovář Lukáš Galerie</title>
+{{ end }}
+{{define "navlink"}}
+<a href="https://github.com/sirluky/">
+  <img src="/logo/GITHUB.svg" data-tippy="Github" class="w-8 h-8 -mt-1 animated delay-1s fadeIn"
+    alt="Github logo" /></a>
+<a href="http://mpw.8u.cz" class="sm:w-64 text-right">Stará verze</a>
+{{ end }}
+{{define "header"}}
+<h1>
+  Vitejte na mém webu, dnes je
+  <script>
+    document.write(new Date().toLocaleDateString().replace(' ', '&nbsp; '));
+  </script>
+</h1>
+<aside class="intro max-w-4xl mx-auto animated fadeIn faster">
+
+  <p class="">Fotografování má dlouhou historii.... Lorem, ipsum dolor sit amet consectetur adipisicing
+    elit.
+    Consequatur cupiditate in, quaerat reprehenderit, quas provident aut nobis aperiam sit veniam autem. Non sunt
+    delectus aliquam. Dolore esse nulla odio pariatur.
+    Unde ducimus quam quod cupiditate vitae ullam autem impedit porro, assumenda inventore repellat labore recusandae
+    dolor qui vel quisquam vero ad aspernatur velit officia harum, corporis iusto similique. Quisquam, nulla.
+    Rem nisi corrupti aperiam quidem sapiente architecto veniam atque voluptate blanditiis laboriosam accusantium
+    tempore debitis culpa doloribus fugiat maiores, aspernatur optio voluptas quos! Omnis libero earum ullam. Nostrum,
+    odio suscipit?</p>
+</aside>
+{{ end }}
+
+{{define "content"}}
+
+
+<hr>
+<h2 class="text-3xl">Moje fotografie</h2>
+<hr class="border border-green-200 opacity-50" />
+{{ partial "fotky" . }}
+<h2 class="text-3xl pt-8">Názory na Web</h2>
+
+<div class="gallery">
+</div>
+<div class="disqus px-2">
+  {{ template "_internal/disqus.html" . }}
+</div>
+{{ end }}
+
+{{define "Head"}}
+{{ end }}

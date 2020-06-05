@@ -5,6 +5,6 @@
 #    X-XSS-Protection = "1; mode=block"
     
 [[redirects]]
-  from = "http://programovaciweb.tk/"
-  to = "https://mpw.netlify.app/"
+  from = "https://mpw.netlify.app/"
+  to = "http://programovaciweb.tk/"
   status = 301

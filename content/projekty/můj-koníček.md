@@ -7,8 +7,6 @@ date: 2019-07-17T10:22:47.953Z
 thub: images/behweb.jpg
 libs:
   - HTML
-  - JS
-  - CSS
 redirect: https://dba-kovarlu.netlify.app/
 mobile: true
 scroll: false

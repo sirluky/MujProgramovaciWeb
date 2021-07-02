@@ -1,7 +1,6 @@
 ---
 title: Lodě
-desc: >-
-  Zahrejte si s kamošema klasické lodě online. Moje první multiplayer hra po
+desc: Zahrejte si s kamošema klasické lodě online. Moje první multiplayer hra po
   internetu.
 tags:
   - hry
@@ -11,7 +10,7 @@ libs:
   - REACT.JS
   - REDUX
   - NODE.JS
-redirect: 'https://lode.netlify.com/'
+redirect: https://lode.lukaskovar.com/
 mobile: false
 ---
  .

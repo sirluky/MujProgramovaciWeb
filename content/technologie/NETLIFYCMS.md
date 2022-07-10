@@ -14,6 +14,6 @@ CMS neboli (Content-Management-System/Redakční systému), je hodně. Ať už j
 
 Jedním z Headless CMS je Netlify CMS, který je unikátní v tom že zapisuje změny přímo do vašeho Git repozitáře v Markdown Formátu.
 
-A tohle si jde ruku v ruce s Statickýmy Generátory, jako je [Gatsby.JS](https://mpw.netlify.com/technologie/gatsby.js/) či [Hugo](/technologie/hugo/), který s hostingy podporující Continuous Deployment, jako je Netlify, Now po přidání či upravení obsahu v CMS automaticky vygenerují stránku.
+A tohle si jde ruku v ruce s Statickýmy Generátory, jako je [Gatsby.JS](https://dev.lukaskovar.com/technologie/gatsby.js/) či [Hugo](/technologie/hugo/), který s hostingy podporující Continuous Deployment, jako je Netlify, Now po přidání či upravení obsahu v CMS automaticky vygenerují stránku.
 
 Právě teď tento článek píšu v NetlifyCMS.

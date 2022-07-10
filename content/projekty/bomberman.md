@@ -13,4 +13,4 @@ mobile: false
 scroll: true
 ---
 Bomberman v P5.JS, hra pro dva hráče, ovladání pomocí WSAD a Šipek, bomba se spouští enterem a spacem.
-<iframe src="https://programovaciweb.tk/projektfull/bomberman" width="810" height="810"> </iframe>
+<iframe src="https://dev.lukaskovar.com/projektfull/bomberman" width="810" height="810"> </iframe>

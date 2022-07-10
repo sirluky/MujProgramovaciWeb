@@ -8,7 +8,7 @@ thub: /images/ascii.png
 libs:
   - VUE.JS
   - BOOTSTRAP.CSS
-redirect: 'https://programovaciweb.tk/projekty/ascii/'
+redirect: 'https://dev.lukaskovar.com/projekty/ascii/'
 mobile: false
 scroll: false
 ---

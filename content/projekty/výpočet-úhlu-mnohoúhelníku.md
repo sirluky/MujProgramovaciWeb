@@ -10,7 +10,7 @@ thub: /images/mnohouhl.png
 libs:
   - VUE.JS
   - BOOTSTRAP.CSS
-redirect: 'https://programovaciweb.tk/projekty/mnohouhelniky/'
+redirect: 'https://dev.lukaskovar.com/projekty/mnohouhelniky/'
 mobile: true
 scroll: false
 ---

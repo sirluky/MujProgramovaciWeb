@@ -10,7 +10,7 @@ libs:
   - JS
   - BOOTSTRAP.CSS
   - FIREBASE
-redirect: https://programovaciweb.tk/projekty/todosekce
+redirect: https://dev.lukaskovar.com/projekty/todosekce
 mobile: true
 scroll: false
 ---

@@ -4,7 +4,7 @@
     "name": "Můj Programovací Web",
     "scope": "/",
     "display": "browser",
-    "start_url": "https://programovaciweb.tk/",
+    "start_url": "https://dev.lukaskovar.com/",
     "short_name": "MPW",
     "theme_color": "#30544A",
     "description": "Web kde sdílím svoje projekty. Většina výtvorů je zde vytvořena za pomocí JavaScriptu a používám framework P5.JS",

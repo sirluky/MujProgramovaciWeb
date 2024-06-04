@@ -6,7 +6,7 @@ desc: >-
   jelikož jsem byl po nemoci, a tak jsou některé veci odfláknuty.
 tags:
   - weby
-date: 1900-06-10T21:30:00.000Z
+date: 2019-02-20T21:30:00.000Z
 thub: /images/retuvka.png
 libs:
   - HTML

@@ -1,6 +1,6 @@
 ---
 title: Lodě
-desc: Zahrejte si s kamošema klasické lodě online. Moje první multiplayer hra po
+desc: Zahrajte si s kámošema klasické lodě online. Moje první multiplayer hra po
   internetu.
 tags:
   - hry

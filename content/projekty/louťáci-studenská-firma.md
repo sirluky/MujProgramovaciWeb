@@ -10,7 +10,7 @@ libs:
   - REACT.JS
   - GRAPHQL
   - MATERIAL.UI
-redirect: https://loutiot.cz/
+redirect: https://loutaci.cz/
 mobile: false
 scroll: false
 ---

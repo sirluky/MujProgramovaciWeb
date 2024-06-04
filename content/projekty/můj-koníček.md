@@ -1,6 +1,6 @@
 ---
 title: Můj Koníček
-desc: WEB úkol do DBA
+desc: WEB o běhu, finální školní práce do databází
 tags:
   - weby
 date: 2019-07-17T10:22:47.953Z

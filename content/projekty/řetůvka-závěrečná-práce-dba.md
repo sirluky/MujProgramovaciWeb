@@ -10,7 +10,7 @@ date: 2019-02-20T21:30:00.000Z
 thub: /images/retuvka.png
 libs:
   - HTML
-redirect: 'https://retuvka.netlify.com'
+redirect: 'https://retuvka.netlify.app'
 mobile: true
 scroll: false
 ---

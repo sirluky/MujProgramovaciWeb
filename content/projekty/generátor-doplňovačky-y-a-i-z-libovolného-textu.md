@@ -9,7 +9,7 @@ date: 2019-07-22T16:28:21.891Z
 thub: /images/dopln.png
 libs:
   - REACT.JS
-redirect: 'https://pravopis.netlify.com/'
+redirect: 'https://pravopis.netlify.app/'
 mobile: false
 ---
  
